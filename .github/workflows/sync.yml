@@ -1,0 +1,29 @@
+name: sync
+on:
+  schedule:
+    - cron: "0 2 * * *" # 每日 02:00 UTC
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: python3 sync/sync.py
+      - name: commit if changed
+        run: |
+          git config user.name "sync-bot"
+          git config user.email "sync-bot@users.noreply.github.com"
+          if ! git diff --quiet models.json; then
+            git add models.json
+            git commit -m "sync: models.dev $(date -u +%F)"
+            git push
+          else
+            echo "no changes"
+          fi

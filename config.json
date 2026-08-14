@@ -1,0 +1,43 @@
+{
+  "source": "https://models.dev/api.json",
+  "provider_filter": {
+    "openai": {
+      "channel": "openai"
+    },
+    "anthropic": {
+      "channel": "anthropic"
+    },
+    "google": {
+      "channel": "google"
+    },
+    "deepseek": {
+      "channel": "deepseek"
+    },
+    "xai": {
+      "channel": "xai"
+    },
+    "alibaba": {
+      "channel": "alibaba"
+    },
+    "zai": {
+      "channel": "zhipuai"
+    },
+    "minimax": {
+      "channel": "minimax",
+      "key_prefix": "minimax/",
+      "action": "both"
+    },
+    "moonshotai": {
+      "channel": "moonshot"
+    },
+    "xiaomi": {
+      "channel": "xiaomi"
+    },
+    "stepfun": {
+      "channel": "stepfun"
+    },
+    "v0": {
+      "channel": "v0"
+    }
+  }
+}
