@@ -2,72 +2,188 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "title": "hb-models/v2",
   "type": "object",
-  "required": ["schema", "updated_at", "models"],
+  "required": [
+    "schema",
+    "updated_at",
+    "models"
+  ],
   "properties": {
-    "schema": {"const": "hb-models/v2"},
-    "updated_at": {"type": "string", "format": "date"},
+    "schema": {
+      "const": "hb-models/v2"
+    },
+    "updated_at": {
+      "type": "string",
+      "format": "date"
+    },
     "models": {
       "type": "array",
       "items": {
         "type": "object",
-        "required": ["id", "name", "limit", "capabilities"],
+        "required": [
+          "id",
+          "name",
+          "kind",
+          "capabilities"
+        ],
         "properties": {
-          "id": {"type": "string", "minLength": 1},
-          "name": {"type": "string"},
-          "family": {"type": "string"},
-          "released": {"type": "string"},
+          "id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "name": {
+            "type": "string"
+          },
+          "family": {
+            "type": "string"
+          },
+          "released": {
+            "type": "string"
+          },
           "limit": {
             "type": "object",
-            "required": ["context", "output"],
             "properties": {
-              "context": {"type": "integer", "exclusiveMinimum": 0},
-              "output": {"type": "integer", "minimum": 0}
+              "context": {
+                "type": "integer",
+                "exclusiveMinimum": 0
+              },
+              "output": {
+                "type": "integer",
+                "minimum": 0
+              }
             }
           },
           "reasoning": {
             "type": "object",
-            "required": ["supported"],
+            "required": [
+              "supported"
+            ],
             "properties": {
-              "supported": {"type": "boolean"},
-              "efforts": {"type": "array", "items": {"type": "string"}, "minItems": 1},
-              "style": {"type": "string"}
+              "supported": {
+                "type": "boolean"
+              },
+              "efforts": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                },
+                "minItems": 1
+              },
+              "style": {
+                "type": "string"
+              }
             }
           },
           "capabilities": {
             "type": "object",
-            "required": ["chat", "vision", "tools"],
+            "required": [
+              "chat",
+              "vision",
+              "tools"
+            ],
             "properties": {
-              "chat": {"type": "boolean"},
-              "vision": {"type": "boolean"},
-              "tools": {"type": "boolean"}
+              "chat": {
+                "type": "boolean"
+              },
+              "vision": {
+                "type": "boolean"
+              },
+              "tools": {
+                "type": "boolean"
+              }
             }
           },
           "ports": {
             "type": "array",
             "items": {
               "type": "object",
-              "required": ["channel"],
+              "required": [
+                "channel"
+              ],
               "properties": {
-                "channel": {"type": "string"},
-                "aliases": {"type": "array", "items": {"type": "string"}},
+                "channel": {
+                  "type": "string"
+                },
+                "aliases": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
                 "price": {
                   "type": "object",
-                  "required": ["currency", "unit", "input", "output"],
+                  "required": [
+                    "currency",
+                    "unit",
+                    "input",
+                    "output"
+                  ],
                   "properties": {
-                    "currency": {"const": "USD"},
-                    "unit": {"const": "per_million_tokens"},
-                    "input": {"type": "number"},
-                    "output": {"type": "number"},
-                    "cache_read": {"type": "number"},
-                    "cache_write": {"type": "number"},
-                    "reasoning": {"type": "number"}
+                    "currency": {
+                      "const": "USD"
+                    },
+                    "unit": {
+                      "const": "per_million_tokens"
+                    },
+                    "input": {
+                      "type": "number"
+                    },
+                    "output": {
+                      "type": "number"
+                    },
+                    "cache_read": {
+                      "type": "number"
+                    },
+                    "cache_write": {
+                      "type": "number"
+                    },
+                    "reasoning": {
+                      "type": "number"
+                    }
                   }
                 }
               }
+            }
+          },
+          "kind": {
+            "type": "string",
+            "enum": [
+              "chat",
+              "image",
+              "audio",
+              "video"
+            ]
+          }
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "kind": {
+            "const": "chat"
+          }
+        },
+        "required": [
+          "kind"
+        ]
+      },
+      "then": {
+        "properties": {
+          "models": {
+            "items": {
+              "required": [
+                "id",
+                "name",
+                "kind",
+                "limit",
+                "capabilities"
+              ]
             }
           }
         }
       }
     }
-  }
+  ]
 }

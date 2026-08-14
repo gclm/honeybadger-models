@@ -5,14 +5,15 @@
     {
       "id": "MiniMax-M2",
       "name": "MiniMax-M2",
-      "limit": {
-        "context": 196608,
-        "output": 128000
-      },
+      "kind": "chat",
       "capabilities": {
         "chat": true,
         "vision": false,
         "tools": true
+      },
+      "limit": {
+        "context": 196608,
+        "output": 128000
       },
       "reasoning": {
         "supported": true
@@ -71,14 +72,15 @@
     {
       "id": "MiniMax-M2.1",
       "name": "MiniMax-M2.1",
-      "limit": {
-        "context": 204800,
-        "output": 131072
-      },
+      "kind": "chat",
       "capabilities": {
         "chat": true,
         "vision": false,
         "tools": true
+      },
+      "limit": {
+        "context": 204800,
+        "output": 131072
       },
       "reasoning": {
         "supported": true
@@ -145,14 +147,15 @@
     {
       "id": "MiniMax-M2.5",
       "name": "MiniMax-M2.5",
-      "limit": {
-        "context": 204800,
-        "output": 131072
-      },
+      "kind": "chat",
       "capabilities": {
         "chat": true,
         "vision": false,
         "tools": true
+      },
+      "limit": {
+        "context": 204800,
+        "output": 131072
       },
       "reasoning": {
         "supported": true
@@ -219,14 +222,15 @@
     {
       "id": "MiniMax-M2.5-highspeed",
       "name": "MiniMax-M2.5-highspeed",
-      "limit": {
-        "context": 204800,
-        "output": 131072
-      },
+      "kind": "chat",
       "capabilities": {
         "chat": true,
         "vision": false,
         "tools": true
+      },
+      "limit": {
+        "context": 204800,
+        "output": 131072
       },
       "reasoning": {
         "supported": true
@@ -293,14 +297,15 @@
     {
       "id": "MiniMax-M2.7",
       "name": "MiniMax-M2.7",
-      "limit": {
-        "context": 204800,
-        "output": 131072
-      },
+      "kind": "chat",
       "capabilities": {
         "chat": true,
         "vision": false,
         "tools": true
+      },
+      "limit": {
+        "context": 204800,
+        "output": 131072
       },
       "reasoning": {
         "supported": true
@@ -367,14 +372,15 @@
     {
       "id": "MiniMax-M2.7-highspeed",
       "name": "MiniMax-M2.7-highspeed",
-      "limit": {
-        "context": 204800,
-        "output": 131072
-      },
+      "kind": "chat",
       "capabilities": {
         "chat": true,
         "vision": false,
         "tools": true
+      },
+      "limit": {
+        "context": 204800,
+        "output": 131072
       },
       "reasoning": {
         "supported": true
@@ -441,14 +447,15 @@
     {
       "id": "MiniMax-M3",
       "name": "MiniMax-M3",
-      "limit": {
-        "context": 1000000,
-        "output": 128000
-      },
+      "kind": "chat",
       "capabilities": {
         "chat": true,
         "vision": true,
         "tools": true
+      },
+      "limit": {
+        "context": 1000000,
+        "output": 128000
       },
       "reasoning": {
         "supported": true
@@ -511,16 +518,32 @@
       ]
     },
     {
+      "id": "chatgpt-image-latest",
+      "name": "chatgpt-image-latest",
+      "kind": "image",
+      "capabilities": {
+        "chat": false,
+        "vision": true,
+        "tools": false
+      },
+      "ports": [
+        {
+          "channel": "openai"
+        }
+      ]
+    },
+    {
       "id": "claude-fable-5",
       "name": "Claude Fable 5",
-      "limit": {
-        "context": 1000000,
-        "output": 128000
-      },
+      "kind": "chat",
       "capabilities": {
         "chat": true,
         "vision": true,
         "tools": true
+      },
+      "limit": {
+        "context": 1000000,
+        "output": 128000
       },
       "reasoning": {
         "supported": true,
@@ -549,14 +572,15 @@
     {
       "id": "claude-haiku-4-5",
       "name": "Claude Haiku 4.5 (latest)",
-      "limit": {
-        "context": 200000,
-        "output": 64000
-      },
+      "kind": "chat",
       "capabilities": {
         "chat": true,
         "vision": true,
         "tools": true
+      },
+      "limit": {
+        "context": 200000,
+        "output": 64000
       },
       "reasoning": {
         "supported": true
@@ -581,14 +605,15 @@
     {
       "id": "claude-opus-4-5",
       "name": "Claude Opus 4.5 (latest)",
-      "limit": {
-        "context": 200000,
-        "output": 64000
-      },
+      "kind": "chat",
       "capabilities": {
         "chat": true,
         "vision": true,
         "tools": true
+      },
+      "limit": {
+        "context": 200000,
+        "output": 64000
       },
       "reasoning": {
         "supported": true,
@@ -618,14 +643,15 @@
     {
       "id": "claude-opus-4-6",
       "name": "Claude Opus 4.6",
-      "limit": {
-        "context": 1000000,
-        "output": 128000
-      },
+      "kind": "chat",
       "capabilities": {
         "chat": true,
         "vision": true,
         "tools": true
+      },
+      "limit": {
+        "context": 1000000,
+        "output": 128000
       },
       "reasoning": {
         "supported": true,
@@ -653,14 +679,15 @@
     {
       "id": "claude-opus-4-7",
       "name": "Claude Opus 4.7",
-      "limit": {
-        "context": 1000000,
-        "output": 128000
-      },
+      "kind": "chat",
       "capabilities": {
         "chat": true,
         "vision": true,
         "tools": true
+      },
+      "limit": {
+        "context": 1000000,
+        "output": 128000
       },
       "reasoning": {
         "supported": true,
@@ -689,14 +716,15 @@
     {
       "id": "claude-opus-4-8",
       "name": "Claude Opus 4.8",
-      "limit": {
-        "context": 1000000,
-        "output": 128000
-      },
+      "kind": "chat",
       "capabilities": {
         "chat": true,
         "vision": true,
         "tools": true
+      },
+      "limit": {
+        "context": 1000000,
+        "output": 128000
       },
       "reasoning": {
         "supported": true,
@@ -725,14 +753,15 @@
     {
       "id": "claude-opus-5",
       "name": "Claude Opus 5",
-      "limit": {
-        "context": 1000000,
-        "output": 128000
-      },
+      "kind": "chat",
       "capabilities": {
         "chat": true,
         "vision": true,
         "tools": true
+      },
+      "limit": {
+        "context": 1000000,
+        "output": 128000
       },
       "reasoning": {
         "supported": true,
@@ -761,14 +790,15 @@
     {
       "id": "claude-sonnet-4-5",
       "name": "Claude Sonnet 4.5 (latest)",
-      "limit": {
-        "context": 1000000,
-        "output": 64000
-      },
+      "kind": "chat",
       "capabilities": {
         "chat": true,
         "vision": true,
         "tools": true
+      },
+      "limit": {
+        "context": 1000000,
+        "output": 64000
       },
       "reasoning": {
         "supported": true
@@ -793,14 +823,15 @@
     {
       "id": "claude-sonnet-4-6",
       "name": "Claude Sonnet 4.6",
-      "limit": {
-        "context": 1000000,
-        "output": 128000
-      },
+      "kind": "chat",
       "capabilities": {
         "chat": true,
         "vision": true,
         "tools": true
+      },
+      "limit": {
+        "context": 1000000,
+        "output": 128000
       },
       "reasoning": {
         "supported": true,
@@ -828,14 +859,15 @@
     {
       "id": "claude-sonnet-5",
       "name": "Claude Sonnet 5",
-      "limit": {
-        "context": 1000000,
-        "output": 128000
-      },
+      "kind": "chat",
       "capabilities": {
         "chat": true,
         "vision": true,
         "tools": true
+      },
+      "limit": {
+        "context": 1000000,
+        "output": 128000
       },
       "reasoning": {
         "supported": true,
@@ -864,14 +896,15 @@
     {
       "id": "deep-research-max-preview-04-2026",
       "name": "Deep Research Max Preview (Apr-21-2026)",
+      "kind": "image",
+      "capabilities": {
+        "chat": false,
+        "vision": true,
+        "tools": true
+      },
       "limit": {
         "context": 131072,
         "output": 65536
-      },
-      "capabilities": {
-        "chat": true,
-        "vision": true,
-        "tools": true
       },
       "reasoning": {
         "supported": true
@@ -892,14 +925,15 @@
     {
       "id": "deep-research-preview-04-2026",
       "name": "Deep Research Preview (Apr-21-2026)",
+      "kind": "image",
+      "capabilities": {
+        "chat": false,
+        "vision": true,
+        "tools": true
+      },
       "limit": {
         "context": 131072,
         "output": 65536
-      },
-      "capabilities": {
-        "chat": true,
-        "vision": true,
-        "tools": true
       },
       "reasoning": {
         "supported": true
@@ -920,14 +954,15 @@
     {
       "id": "deepseek-chat",
       "name": "DeepSeek Chat",
-      "limit": {
-        "context": 1000000,
-        "output": 384000
-      },
+      "kind": "chat",
       "capabilities": {
         "chat": true,
         "vision": true,
         "tools": true
+      },
+      "limit": {
+        "context": 1000000,
+        "output": 384000
       },
       "ports": [
         {
@@ -945,14 +980,15 @@
     {
       "id": "deepseek-reasoner",
       "name": "DeepSeek Reasoner",
-      "limit": {
-        "context": 1000000,
-        "output": 384000
-      },
+      "kind": "chat",
       "capabilities": {
         "chat": true,
         "vision": true,
         "tools": true
+      },
+      "limit": {
+        "context": 1000000,
+        "output": 384000
       },
       "reasoning": {
         "supported": true
@@ -974,14 +1010,15 @@
     {
       "id": "deepseek-v4-flash",
       "name": "DeepSeek V4 Flash",
-      "limit": {
-        "context": 1000000,
-        "output": 384000
-      },
+      "kind": "chat",
       "capabilities": {
         "chat": true,
         "vision": false,
         "tools": true
+      },
+      "limit": {
+        "context": 1000000,
+        "output": 384000
       },
       "reasoning": {
         "supported": true,
@@ -1008,14 +1045,15 @@
     {
       "id": "deepseek-v4-flash-0731",
       "name": "DeepSeek V4 Flash 0731",
-      "limit": {
-        "context": 1000000,
-        "output": 384000
-      },
+      "kind": "chat",
       "capabilities": {
         "chat": true,
         "vision": false,
         "tools": true
+      },
+      "limit": {
+        "context": 1000000,
+        "output": 384000
       },
       "reasoning": {
         "supported": true,
@@ -1040,14 +1078,15 @@
     {
       "id": "deepseek-v4-pro",
       "name": "DeepSeek V4 Pro",
-      "limit": {
-        "context": 1000000,
-        "output": 384000
-      },
+      "kind": "chat",
       "capabilities": {
         "chat": true,
         "vision": false,
         "tools": true
+      },
+      "limit": {
+        "context": 1000000,
+        "output": 384000
       },
       "reasoning": {
         "supported": true,
@@ -1073,14 +1112,15 @@
     {
       "id": "gemini-2.5-computer-use-preview-10-2025",
       "name": "Gemini 2.5 Computer Use Preview 10-2025",
-      "limit": {
-        "context": 131072,
-        "output": 65536
-      },
+      "kind": "chat",
       "capabilities": {
         "chat": true,
         "vision": true,
         "tools": true
+      },
+      "limit": {
+        "context": 131072,
+        "output": 65536
       },
       "reasoning": {
         "supported": true
@@ -1100,14 +1140,15 @@
     {
       "id": "gemini-2.5-flash",
       "name": "Gemini 2.5 Flash",
-      "limit": {
-        "context": 1048576,
-        "output": 65536
-      },
+      "kind": "chat",
       "capabilities": {
         "chat": true,
         "vision": true,
         "tools": true
+      },
+      "limit": {
+        "context": 1048576,
+        "output": 65536
       },
       "reasoning": {
         "supported": true
@@ -1128,14 +1169,15 @@
     {
       "id": "gemini-2.5-flash-image",
       "name": "Nano Banana",
+      "kind": "image",
+      "capabilities": {
+        "chat": false,
+        "vision": true,
+        "tools": false
+      },
       "limit": {
         "context": 32768,
         "output": 32768
-      },
-      "capabilities": {
-        "chat": true,
-        "vision": true,
-        "tools": false
       },
       "reasoning": {
         "supported": true
@@ -1156,14 +1198,15 @@
     {
       "id": "gemini-2.5-flash-lite",
       "name": "Gemini 2.5 Flash-Lite",
-      "limit": {
-        "context": 1048576,
-        "output": 65536
-      },
+      "kind": "chat",
       "capabilities": {
         "chat": true,
         "vision": true,
         "tools": true
+      },
+      "limit": {
+        "context": 1048576,
+        "output": 65536
       },
       "reasoning": {
         "supported": true
@@ -1184,14 +1227,15 @@
     {
       "id": "gemini-2.5-flash-preview-tts",
       "name": "Gemini 2.5 Flash Preview TTS",
+      "kind": "audio",
+      "capabilities": {
+        "chat": false,
+        "vision": false,
+        "tools": false
+      },
       "limit": {
         "context": 8192,
         "output": 16384
-      },
-      "capabilities": {
-        "chat": true,
-        "vision": false,
-        "tools": false
       },
       "ports": [
         {
@@ -1208,14 +1252,15 @@
     {
       "id": "gemini-2.5-pro",
       "name": "Gemini 2.5 Pro",
-      "limit": {
-        "context": 1048576,
-        "output": 65536
-      },
+      "kind": "chat",
       "capabilities": {
         "chat": true,
         "vision": true,
         "tools": true
+      },
+      "limit": {
+        "context": 1048576,
+        "output": 65536
       },
       "reasoning": {
         "supported": true
@@ -1236,14 +1281,15 @@
     {
       "id": "gemini-2.5-pro-preview-tts",
       "name": "Gemini 2.5 Pro Preview TTS",
+      "kind": "audio",
+      "capabilities": {
+        "chat": false,
+        "vision": false,
+        "tools": false
+      },
       "limit": {
         "context": 8192,
         "output": 16384
-      },
-      "capabilities": {
-        "chat": true,
-        "vision": false,
-        "tools": false
       },
       "ports": [
         {
@@ -1260,14 +1306,15 @@
     {
       "id": "gemini-3-flash-preview",
       "name": "Gemini 3 Flash Preview",
-      "limit": {
-        "context": 1048576,
-        "output": 65536
-      },
+      "kind": "chat",
       "capabilities": {
         "chat": true,
         "vision": true,
         "tools": true
+      },
+      "limit": {
+        "context": 1048576,
+        "output": 65536
       },
       "reasoning": {
         "supported": true,
@@ -1294,14 +1341,15 @@
     {
       "id": "gemini-3-pro-image",
       "name": "Nano Banana Pro",
+      "kind": "image",
+      "capabilities": {
+        "chat": false,
+        "vision": true,
+        "tools": false
+      },
       "limit": {
         "context": 131072,
         "output": 32768
-      },
-      "capabilities": {
-        "chat": true,
-        "vision": true,
-        "tools": false
       },
       "reasoning": {
         "supported": true,
@@ -1325,14 +1373,15 @@
     {
       "id": "gemini-3-pro-image-preview",
       "name": "Nano Banana Pro",
+      "kind": "image",
+      "capabilities": {
+        "chat": false,
+        "vision": true,
+        "tools": false
+      },
       "limit": {
         "context": 131072,
         "output": 32768
-      },
-      "capabilities": {
-        "chat": true,
-        "vision": true,
-        "tools": false
       },
       "reasoning": {
         "supported": true
@@ -1352,14 +1401,15 @@
     {
       "id": "gemini-3.1-flash-image",
       "name": "Nano Banana 2",
+      "kind": "image",
+      "capabilities": {
+        "chat": false,
+        "vision": true,
+        "tools": false
+      },
       "limit": {
         "context": 65536,
         "output": 65536
-      },
-      "capabilities": {
-        "chat": true,
-        "vision": true,
-        "tools": false
       },
       "reasoning": {
         "supported": true,
@@ -1383,14 +1433,15 @@
     {
       "id": "gemini-3.1-flash-image-preview",
       "name": "Nano Banana 2",
+      "kind": "image",
+      "capabilities": {
+        "chat": false,
+        "vision": true,
+        "tools": false
+      },
       "limit": {
         "context": 65536,
         "output": 65536
-      },
-      "capabilities": {
-        "chat": true,
-        "vision": true,
-        "tools": false
       },
       "reasoning": {
         "supported": true,
@@ -1414,14 +1465,15 @@
     {
       "id": "gemini-3.1-flash-lite",
       "name": "Gemini 3.1 Flash Lite",
-      "limit": {
-        "context": 1048576,
-        "output": 65536
-      },
+      "kind": "chat",
       "capabilities": {
         "chat": true,
         "vision": true,
         "tools": true
+      },
+      "limit": {
+        "context": 1048576,
+        "output": 65536
       },
       "reasoning": {
         "supported": true,
@@ -1448,14 +1500,15 @@
     {
       "id": "gemini-3.1-flash-lite-image",
       "name": "Nano Banana 2 Lite",
+      "kind": "image",
+      "capabilities": {
+        "chat": false,
+        "vision": true,
+        "tools": true
+      },
       "limit": {
         "context": 65536,
         "output": 65536
-      },
-      "capabilities": {
-        "chat": true,
-        "vision": true,
-        "tools": true
       },
       "reasoning": {
         "supported": true,
@@ -1479,14 +1532,15 @@
     {
       "id": "gemini-3.1-flash-lite-preview",
       "name": "Gemini 3.1 Flash Lite Preview",
-      "limit": {
-        "context": 1048576,
-        "output": 65536
-      },
+      "kind": "chat",
       "capabilities": {
         "chat": true,
         "vision": true,
         "tools": true
+      },
+      "limit": {
+        "context": 1048576,
+        "output": 65536
       },
       "reasoning": {
         "supported": true,
@@ -1513,14 +1567,15 @@
     {
       "id": "gemini-3.1-flash-live-preview",
       "name": "Gemini 3.1 Flash Live Preview",
+      "kind": "audio",
+      "capabilities": {
+        "chat": false,
+        "vision": true,
+        "tools": true
+      },
       "limit": {
         "context": 131072,
         "output": 65536
-      },
-      "capabilities": {
-        "chat": true,
-        "vision": true,
-        "tools": true
       },
       "reasoning": {
         "supported": true,
@@ -1546,14 +1601,15 @@
     {
       "id": "gemini-3.1-flash-tts-preview",
       "name": "Gemini 3.1 Flash TTS Preview",
+      "kind": "audio",
+      "capabilities": {
+        "chat": false,
+        "vision": false,
+        "tools": false
+      },
       "limit": {
         "context": 8192,
         "output": 16384
-      },
-      "capabilities": {
-        "chat": true,
-        "vision": false,
-        "tools": false
       },
       "reasoning": {
         "supported": true
@@ -1573,14 +1629,15 @@
     {
       "id": "gemini-3.1-pro-preview",
       "name": "Gemini 3.1 Pro Preview",
-      "limit": {
-        "context": 1048576,
-        "output": 65536
-      },
+      "kind": "chat",
       "capabilities": {
         "chat": true,
         "vision": true,
         "tools": true
+      },
+      "limit": {
+        "context": 1048576,
+        "output": 65536
       },
       "reasoning": {
         "supported": true,
@@ -1606,14 +1663,15 @@
     {
       "id": "gemini-3.1-pro-preview-customtools",
       "name": "Gemini 3.1 Pro Preview Custom Tools",
-      "limit": {
-        "context": 1048576,
-        "output": 65536
-      },
+      "kind": "chat",
       "capabilities": {
         "chat": true,
         "vision": true,
         "tools": true
+      },
+      "limit": {
+        "context": 1048576,
+        "output": 65536
       },
       "reasoning": {
         "supported": true,
@@ -1639,14 +1697,15 @@
     {
       "id": "gemini-3.5-flash",
       "name": "Gemini 3.5 Flash",
-      "limit": {
-        "context": 1048576,
-        "output": 65536
-      },
+      "kind": "chat",
       "capabilities": {
         "chat": true,
         "vision": true,
         "tools": true
+      },
+      "limit": {
+        "context": 1048576,
+        "output": 65536
       },
       "reasoning": {
         "supported": true,
@@ -1673,14 +1732,15 @@
     {
       "id": "gemini-3.5-flash-lite",
       "name": "Gemini 3.5 Flash Lite",
-      "limit": {
-        "context": 1048576,
-        "output": 65536
-      },
+      "kind": "chat",
       "capabilities": {
         "chat": true,
         "vision": true,
         "tools": true
+      },
+      "limit": {
+        "context": 1048576,
+        "output": 65536
       },
       "reasoning": {
         "supported": true,
@@ -1707,14 +1767,15 @@
     {
       "id": "gemini-3.5-live-translate-preview",
       "name": "Gemini 3.5 Live Translate Preview",
+      "kind": "audio",
+      "capabilities": {
+        "chat": false,
+        "vision": false,
+        "tools": false
+      },
       "limit": {
         "context": 16384,
         "output": 32768
-      },
-      "capabilities": {
-        "chat": true,
-        "vision": false,
-        "tools": false
       },
       "ports": [
         {
@@ -1731,14 +1792,15 @@
     {
       "id": "gemini-3.6-flash",
       "name": "Gemini 3.6 Flash",
-      "limit": {
-        "context": 1048576,
-        "output": 65536
-      },
+      "kind": "chat",
       "capabilities": {
         "chat": true,
         "vision": true,
         "tools": true
+      },
+      "limit": {
+        "context": 1048576,
+        "output": 65536
       },
       "reasoning": {
         "supported": true,
@@ -1765,14 +1827,15 @@
     {
       "id": "gemini-3.7-flash",
       "name": "Gemini 3.7 Flash",
-      "limit": {
-        "context": 1048576,
-        "output": 65536
-      },
+      "kind": "chat",
       "capabilities": {
         "chat": true,
         "vision": true,
         "tools": true
+      },
+      "limit": {
+        "context": 1048576,
+        "output": 65536
       },
       "reasoning": {
         "supported": true,
@@ -1798,14 +1861,15 @@
     {
       "id": "gemini-embedding-001",
       "name": "Gemini Embedding 001",
-      "limit": {
-        "context": 2048,
-        "output": 1
-      },
+      "kind": "chat",
       "capabilities": {
         "chat": true,
         "vision": false,
         "tools": false
+      },
+      "limit": {
+        "context": 2048,
+        "output": 1
       },
       "ports": [
         {
@@ -1822,14 +1886,15 @@
     {
       "id": "gemini-embedding-2",
       "name": "Gemini Embedding 2",
-      "limit": {
-        "context": 8192,
-        "output": 1
-      },
+      "kind": "chat",
       "capabilities": {
         "chat": true,
         "vision": true,
         "tools": false
+      },
+      "limit": {
+        "context": 8192,
+        "output": 1
       },
       "ports": [
         {
@@ -1846,14 +1911,15 @@
     {
       "id": "gemini-flash-latest",
       "name": "Gemini Flash Latest",
-      "limit": {
-        "context": 1048576,
-        "output": 65536
-      },
+      "kind": "chat",
       "capabilities": {
         "chat": true,
         "vision": true,
         "tools": true
+      },
+      "limit": {
+        "context": 1048576,
+        "output": 65536
       },
       "reasoning": {
         "supported": true,
@@ -1880,14 +1946,15 @@
     {
       "id": "gemini-flash-lite-latest",
       "name": "Gemini Flash-Lite Latest",
-      "limit": {
-        "context": 1048576,
-        "output": 65536
-      },
+      "kind": "chat",
       "capabilities": {
         "chat": true,
         "vision": true,
         "tools": true
+      },
+      "limit": {
+        "context": 1048576,
+        "output": 65536
       },
       "reasoning": {
         "supported": true,
@@ -1914,14 +1981,15 @@
     {
       "id": "gemini-omni-flash-preview",
       "name": "Gemini Omni Flash Preview",
+      "kind": "video",
+      "capabilities": {
+        "chat": false,
+        "vision": true,
+        "tools": false
+      },
       "limit": {
         "context": 131072,
         "output": 65536
-      },
-      "capabilities": {
-        "chat": true,
-        "vision": true,
-        "tools": false
       },
       "reasoning": {
         "supported": true
@@ -1941,14 +2009,15 @@
     {
       "id": "gemini-robotics-er-1.6-preview",
       "name": "Gemini Robotics-ER 1.6 Preview",
-      "limit": {
-        "context": 131072,
-        "output": 65536
-      },
+      "kind": "chat",
       "capabilities": {
         "chat": true,
         "vision": true,
         "tools": true
+      },
+      "limit": {
+        "context": 131072,
+        "output": 65536
       },
       "reasoning": {
         "supported": true
@@ -1968,14 +2037,15 @@
     {
       "id": "gemma-4-26b-a4b-it",
       "name": "Gemma 4 26B A4B IT",
-      "limit": {
-        "context": 262144,
-        "output": 32768
-      },
+      "kind": "chat",
       "capabilities": {
         "chat": true,
         "vision": true,
         "tools": true
+      },
+      "limit": {
+        "context": 262144,
+        "output": 32768
       },
       "reasoning": {
         "supported": true
@@ -1989,14 +2059,15 @@
     {
       "id": "gemma-4-31b-it",
       "name": "Gemma 4 31B IT",
-      "limit": {
-        "context": 262144,
-        "output": 32768
-      },
+      "kind": "chat",
       "capabilities": {
         "chat": true,
         "vision": true,
         "tools": true
+      },
+      "limit": {
+        "context": 262144,
+        "output": 32768
       },
       "reasoning": {
         "supported": true
@@ -2010,14 +2081,15 @@
     {
       "id": "glm-4.5",
       "name": "GLM-4.5",
-      "limit": {
-        "context": 131072,
-        "output": 98304
-      },
+      "kind": "chat",
       "capabilities": {
         "chat": true,
         "vision": false,
         "tools": true
+      },
+      "limit": {
+        "context": 131072,
+        "output": 98304
       },
       "reasoning": {
         "supported": true
@@ -2039,14 +2111,15 @@
     {
       "id": "glm-4.5-air",
       "name": "GLM-4.5-Air",
-      "limit": {
-        "context": 131072,
-        "output": 98304
-      },
+      "kind": "chat",
       "capabilities": {
         "chat": true,
         "vision": false,
         "tools": true
+      },
+      "limit": {
+        "context": 131072,
+        "output": 98304
       },
       "reasoning": {
         "supported": true
@@ -2068,14 +2141,15 @@
     {
       "id": "glm-4.5-flash",
       "name": "GLM-4.5-Flash",
-      "limit": {
-        "context": 131072,
-        "output": 98304
-      },
+      "kind": "chat",
       "capabilities": {
         "chat": true,
         "vision": false,
         "tools": true
+      },
+      "limit": {
+        "context": 131072,
+        "output": 98304
       },
       "reasoning": {
         "supported": true
@@ -2097,14 +2171,15 @@
     {
       "id": "glm-4.5v",
       "name": "GLM-4.5V",
-      "limit": {
-        "context": 64000,
-        "output": 16384
-      },
+      "kind": "chat",
       "capabilities": {
         "chat": true,
         "vision": true,
         "tools": true
+      },
+      "limit": {
+        "context": 64000,
+        "output": 16384
       },
       "reasoning": {
         "supported": true
@@ -2124,14 +2199,15 @@
     {
       "id": "glm-4.6",
       "name": "GLM-4.6",
-      "limit": {
-        "context": 204800,
-        "output": 131072
-      },
+      "kind": "chat",
       "capabilities": {
         "chat": true,
         "vision": false,
         "tools": true
+      },
+      "limit": {
+        "context": 204800,
+        "output": 131072
       },
       "reasoning": {
         "supported": true
@@ -2153,14 +2229,15 @@
     {
       "id": "glm-4.6v",
       "name": "GLM-4.6V",
-      "limit": {
-        "context": 128000,
-        "output": 32768
-      },
+      "kind": "chat",
       "capabilities": {
         "chat": true,
         "vision": true,
         "tools": true
+      },
+      "limit": {
+        "context": 128000,
+        "output": 32768
       },
       "reasoning": {
         "supported": true
@@ -2180,14 +2257,15 @@
     {
       "id": "glm-4.7",
       "name": "GLM-4.7",
-      "limit": {
-        "context": 204800,
-        "output": 131072
-      },
+      "kind": "chat",
       "capabilities": {
         "chat": true,
         "vision": false,
         "tools": true
+      },
+      "limit": {
+        "context": 204800,
+        "output": 131072
       },
       "reasoning": {
         "supported": true
@@ -2209,14 +2287,15 @@
     {
       "id": "glm-4.7-flash",
       "name": "GLM-4.7-Flash",
-      "limit": {
-        "context": 200000,
-        "output": 131072
-      },
+      "kind": "chat",
       "capabilities": {
         "chat": true,
         "vision": false,
         "tools": true
+      },
+      "limit": {
+        "context": 200000,
+        "output": 131072
       },
       "reasoning": {
         "supported": true
@@ -2238,14 +2317,15 @@
     {
       "id": "glm-4.7-flashx",
       "name": "GLM-4.7-FlashX",
-      "limit": {
-        "context": 200000,
-        "output": 131072
-      },
+      "kind": "chat",
       "capabilities": {
         "chat": true,
         "vision": false,
         "tools": true
+      },
+      "limit": {
+        "context": 200000,
+        "output": 131072
       },
       "reasoning": {
         "supported": true
@@ -2267,14 +2347,15 @@
     {
       "id": "glm-5",
       "name": "GLM-5",
-      "limit": {
-        "context": 204800,
-        "output": 131072
-      },
+      "kind": "chat",
       "capabilities": {
         "chat": true,
         "vision": false,
         "tools": true
+      },
+      "limit": {
+        "context": 204800,
+        "output": 131072
       },
       "reasoning": {
         "supported": true
@@ -2296,14 +2377,15 @@
     {
       "id": "glm-5-turbo",
       "name": "GLM-5-Turbo",
-      "limit": {
-        "context": 200000,
-        "output": 131072
-      },
+      "kind": "chat",
       "capabilities": {
         "chat": true,
         "vision": false,
         "tools": true
+      },
+      "limit": {
+        "context": 200000,
+        "output": 131072
       },
       "reasoning": {
         "supported": true
@@ -2325,14 +2407,15 @@
     {
       "id": "glm-5.1",
       "name": "GLM-5.1",
-      "limit": {
-        "context": 200000,
-        "output": 131072
-      },
+      "kind": "chat",
       "capabilities": {
         "chat": true,
         "vision": false,
         "tools": true
+      },
+      "limit": {
+        "context": 200000,
+        "output": 131072
       },
       "reasoning": {
         "supported": true
@@ -2354,14 +2437,15 @@
     {
       "id": "glm-5.2",
       "name": "GLM-5.2",
-      "limit": {
-        "context": 1000000,
-        "output": 131072
-      },
+      "kind": "chat",
       "capabilities": {
         "chat": true,
         "vision": false,
         "tools": true
+      },
+      "limit": {
+        "context": 1000000,
+        "output": 131072
       },
       "reasoning": {
         "supported": true,
@@ -2402,14 +2486,15 @@
     {
       "id": "glm-5v-turbo",
       "name": "GLM-5V-Turbo",
-      "limit": {
-        "context": 200000,
-        "output": 131072
-      },
+      "kind": "chat",
       "capabilities": {
         "chat": true,
         "vision": true,
         "tools": true
+      },
+      "limit": {
+        "context": 200000,
+        "output": 131072
       },
       "reasoning": {
         "supported": true
@@ -2431,14 +2516,15 @@
     {
       "id": "gpt-3.5-turbo",
       "name": "GPT-3.5-turbo",
-      "limit": {
-        "context": 16385,
-        "output": 4096
-      },
+      "kind": "chat",
       "capabilities": {
         "chat": true,
         "vision": false,
         "tools": false
+      },
+      "limit": {
+        "context": 16385,
+        "output": 4096
       },
       "ports": [
         {
@@ -2456,14 +2542,15 @@
     {
       "id": "gpt-4",
       "name": "GPT-4",
-      "limit": {
-        "context": 8192,
-        "output": 8192
-      },
+      "kind": "chat",
       "capabilities": {
         "chat": true,
         "vision": true,
         "tools": true
+      },
+      "limit": {
+        "context": 8192,
+        "output": 8192
       },
       "ports": [
         {
@@ -2480,14 +2567,15 @@
     {
       "id": "gpt-4-turbo",
       "name": "GPT-4 Turbo",
-      "limit": {
-        "context": 128000,
-        "output": 4096
-      },
+      "kind": "chat",
       "capabilities": {
         "chat": true,
         "vision": true,
         "tools": true
+      },
+      "limit": {
+        "context": 128000,
+        "output": 4096
       },
       "ports": [
         {
@@ -2504,14 +2592,15 @@
     {
       "id": "gpt-4.1",
       "name": "GPT-4.1",
-      "limit": {
-        "context": 1047576,
-        "output": 32768
-      },
+      "kind": "chat",
       "capabilities": {
         "chat": true,
         "vision": true,
         "tools": true
+      },
+      "limit": {
+        "context": 1047576,
+        "output": 32768
       },
       "ports": [
         {
@@ -2529,14 +2618,15 @@
     {
       "id": "gpt-4.1-mini",
       "name": "GPT-4.1 mini",
-      "limit": {
-        "context": 1047576,
-        "output": 32768
-      },
+      "kind": "chat",
       "capabilities": {
         "chat": true,
         "vision": true,
         "tools": true
+      },
+      "limit": {
+        "context": 1047576,
+        "output": 32768
       },
       "ports": [
         {
@@ -2554,14 +2644,15 @@
     {
       "id": "gpt-4.1-nano",
       "name": "GPT-4.1 nano",
-      "limit": {
-        "context": 1047576,
-        "output": 32768
-      },
+      "kind": "chat",
       "capabilities": {
         "chat": true,
         "vision": true,
         "tools": true
+      },
+      "limit": {
+        "context": 1047576,
+        "output": 32768
       },
       "ports": [
         {
@@ -2579,14 +2670,15 @@
     {
       "id": "gpt-4o",
       "name": "GPT-4o",
-      "limit": {
-        "context": 128000,
-        "output": 16384
-      },
+      "kind": "chat",
       "capabilities": {
         "chat": true,
         "vision": true,
         "tools": true
+      },
+      "limit": {
+        "context": 128000,
+        "output": 16384
       },
       "ports": [
         {
@@ -2604,14 +2696,15 @@
     {
       "id": "gpt-4o-2024-05-13",
       "name": "GPT-4o (2024-05-13)",
-      "limit": {
-        "context": 128000,
-        "output": 4096
-      },
+      "kind": "chat",
       "capabilities": {
         "chat": true,
         "vision": true,
         "tools": true
+      },
+      "limit": {
+        "context": 128000,
+        "output": 4096
       },
       "ports": [
         {
@@ -2628,14 +2721,15 @@
     {
       "id": "gpt-4o-2024-08-06",
       "name": "GPT-4o (2024-08-06)",
-      "limit": {
-        "context": 128000,
-        "output": 16384
-      },
+      "kind": "chat",
       "capabilities": {
         "chat": true,
         "vision": true,
         "tools": true
+      },
+      "limit": {
+        "context": 128000,
+        "output": 16384
       },
       "ports": [
         {
@@ -2653,14 +2747,15 @@
     {
       "id": "gpt-4o-2024-11-20",
       "name": "GPT-4o (2024-11-20)",
-      "limit": {
-        "context": 128000,
-        "output": 16384
-      },
+      "kind": "chat",
       "capabilities": {
         "chat": true,
         "vision": true,
         "tools": true
+      },
+      "limit": {
+        "context": 128000,
+        "output": 16384
       },
       "ports": [
         {
@@ -2678,14 +2773,15 @@
     {
       "id": "gpt-4o-mini",
       "name": "GPT-4o mini",
-      "limit": {
-        "context": 128000,
-        "output": 16384
-      },
+      "kind": "chat",
       "capabilities": {
         "chat": true,
         "vision": true,
         "tools": true
+      },
+      "limit": {
+        "context": 128000,
+        "output": 16384
       },
       "ports": [
         {
@@ -2703,14 +2799,15 @@
     {
       "id": "gpt-5",
       "name": "GPT-5",
-      "limit": {
-        "context": 400000,
-        "output": 128000
-      },
+      "kind": "chat",
       "capabilities": {
         "chat": true,
         "vision": true,
         "tools": true
+      },
+      "limit": {
+        "context": 400000,
+        "output": 128000
       },
       "reasoning": {
         "supported": true,
@@ -2737,14 +2834,15 @@
     {
       "id": "gpt-5-mini",
       "name": "GPT-5 Mini",
-      "limit": {
-        "context": 400000,
-        "output": 128000
-      },
+      "kind": "chat",
       "capabilities": {
         "chat": true,
         "vision": true,
         "tools": true
+      },
+      "limit": {
+        "context": 400000,
+        "output": 128000
       },
       "reasoning": {
         "supported": true,
@@ -2771,14 +2869,15 @@
     {
       "id": "gpt-5-nano",
       "name": "GPT-5 Nano",
-      "limit": {
-        "context": 400000,
-        "output": 128000
-      },
+      "kind": "chat",
       "capabilities": {
         "chat": true,
         "vision": true,
         "tools": true
+      },
+      "limit": {
+        "context": 400000,
+        "output": 128000
       },
       "reasoning": {
         "supported": true,
@@ -2805,14 +2904,15 @@
     {
       "id": "gpt-5-pro",
       "name": "GPT-5 Pro",
-      "limit": {
-        "context": 400000,
-        "output": 272000
-      },
+      "kind": "chat",
       "capabilities": {
         "chat": true,
         "vision": true,
         "tools": true
+      },
+      "limit": {
+        "context": 400000,
+        "output": 272000
       },
       "reasoning": {
         "supported": true,
@@ -2835,14 +2935,15 @@
     {
       "id": "gpt-5.1",
       "name": "GPT-5.1",
-      "limit": {
-        "context": 400000,
-        "output": 128000
-      },
+      "kind": "chat",
       "capabilities": {
         "chat": true,
         "vision": true,
         "tools": true
+      },
+      "limit": {
+        "context": 400000,
+        "output": 128000
       },
       "reasoning": {
         "supported": true,
@@ -2868,14 +2969,15 @@
     {
       "id": "gpt-5.2",
       "name": "GPT-5.2",
-      "limit": {
-        "context": 400000,
-        "output": 128000
-      },
+      "kind": "chat",
       "capabilities": {
         "chat": true,
         "vision": true,
         "tools": true
+      },
+      "limit": {
+        "context": 400000,
+        "output": 128000
       },
       "reasoning": {
         "supported": true,
@@ -2902,14 +3004,15 @@
     {
       "id": "gpt-5.2-chat-latest",
       "name": "GPT-5.2 Chat",
-      "limit": {
-        "context": 128000,
-        "output": 16384
-      },
+      "kind": "chat",
       "capabilities": {
         "chat": true,
         "vision": true,
         "tools": true
+      },
+      "limit": {
+        "context": 128000,
+        "output": 16384
       },
       "reasoning": {
         "supported": true,
@@ -2933,14 +3036,15 @@
     {
       "id": "gpt-5.2-pro",
       "name": "GPT-5.2 Pro",
-      "limit": {
-        "context": 400000,
-        "output": 128000
-      },
+      "kind": "chat",
       "capabilities": {
         "chat": true,
         "vision": true,
         "tools": true
+      },
+      "limit": {
+        "context": 400000,
+        "output": 128000
       },
       "reasoning": {
         "supported": true,
@@ -2965,14 +3069,15 @@
     {
       "id": "gpt-5.3-chat-latest",
       "name": "GPT-5.3 Chat (latest)",
-      "limit": {
-        "context": 128000,
-        "output": 16384
-      },
+      "kind": "chat",
       "capabilities": {
         "chat": true,
         "vision": true,
         "tools": true
+      },
+      "limit": {
+        "context": 128000,
+        "output": 16384
       },
       "ports": [
         {
@@ -2990,14 +3095,15 @@
     {
       "id": "gpt-5.3-codex",
       "name": "GPT-5.3 Codex",
-      "limit": {
-        "context": 400000,
-        "output": 128000
-      },
+      "kind": "chat",
       "capabilities": {
         "chat": true,
         "vision": true,
         "tools": true
+      },
+      "limit": {
+        "context": 400000,
+        "output": 128000
       },
       "reasoning": {
         "supported": true,
@@ -3024,14 +3130,15 @@
     {
       "id": "gpt-5.3-codex-spark",
       "name": "GPT-5.3 Codex Spark",
-      "limit": {
-        "context": 128000,
-        "output": 32000
-      },
+      "kind": "chat",
       "capabilities": {
         "chat": true,
         "vision": true,
         "tools": true
+      },
+      "limit": {
+        "context": 128000,
+        "output": 32000
       },
       "reasoning": {
         "supported": true,
@@ -3058,14 +3165,15 @@
     {
       "id": "gpt-5.4",
       "name": "GPT-5.4",
-      "limit": {
-        "context": 1050000,
-        "output": 128000
-      },
+      "kind": "chat",
       "capabilities": {
         "chat": true,
         "vision": true,
         "tools": true
+      },
+      "limit": {
+        "context": 1050000,
+        "output": 128000
       },
       "reasoning": {
         "supported": true,
@@ -3092,14 +3200,15 @@
     {
       "id": "gpt-5.4-mini",
       "name": "GPT-5.4 mini",
-      "limit": {
-        "context": 400000,
-        "output": 128000
-      },
+      "kind": "chat",
       "capabilities": {
         "chat": true,
         "vision": true,
         "tools": true
+      },
+      "limit": {
+        "context": 400000,
+        "output": 128000
       },
       "reasoning": {
         "supported": true,
@@ -3126,14 +3235,15 @@
     {
       "id": "gpt-5.4-nano",
       "name": "GPT-5.4 nano",
-      "limit": {
-        "context": 400000,
-        "output": 128000
-      },
+      "kind": "chat",
       "capabilities": {
         "chat": true,
         "vision": true,
         "tools": true
+      },
+      "limit": {
+        "context": 400000,
+        "output": 128000
       },
       "reasoning": {
         "supported": true,
@@ -3160,14 +3270,15 @@
     {
       "id": "gpt-5.4-pro",
       "name": "GPT-5.4 Pro",
-      "limit": {
-        "context": 1050000,
-        "output": 128000
-      },
+      "kind": "chat",
       "capabilities": {
         "chat": true,
         "vision": true,
         "tools": true
+      },
+      "limit": {
+        "context": 1050000,
+        "output": 128000
       },
       "reasoning": {
         "supported": true,
@@ -3192,14 +3303,15 @@
     {
       "id": "gpt-5.5",
       "name": "GPT-5.5",
-      "limit": {
-        "context": 1050000,
-        "output": 128000
-      },
+      "kind": "chat",
       "capabilities": {
         "chat": true,
         "vision": true,
         "tools": true
+      },
+      "limit": {
+        "context": 1050000,
+        "output": 128000
       },
       "reasoning": {
         "supported": true,
@@ -3226,14 +3338,15 @@
     {
       "id": "gpt-5.5-pro",
       "name": "GPT-5.5 Pro",
-      "limit": {
-        "context": 1050000,
-        "output": 128000
-      },
+      "kind": "chat",
       "capabilities": {
         "chat": true,
         "vision": true,
         "tools": true
+      },
+      "limit": {
+        "context": 1050000,
+        "output": 128000
       },
       "reasoning": {
         "supported": true,
@@ -3258,14 +3371,15 @@
     {
       "id": "gpt-5.6",
       "name": "GPT-5.6",
-      "limit": {
-        "context": 1050000,
-        "output": 128000
-      },
+      "kind": "chat",
       "capabilities": {
         "chat": true,
         "vision": true,
         "tools": true
+      },
+      "limit": {
+        "context": 1050000,
+        "output": 128000
       },
       "reasoning": {
         "supported": true,
@@ -3294,14 +3408,15 @@
     {
       "id": "gpt-5.6-luna",
       "name": "GPT-5.6 Luna",
-      "limit": {
-        "context": 1050000,
-        "output": 128000
-      },
+      "kind": "chat",
       "capabilities": {
         "chat": true,
         "vision": true,
         "tools": true
+      },
+      "limit": {
+        "context": 1050000,
+        "output": 128000
       },
       "reasoning": {
         "supported": true,
@@ -3330,14 +3445,15 @@
     {
       "id": "gpt-5.6-sol",
       "name": "GPT-5.6 Sol",
-      "limit": {
-        "context": 1050000,
-        "output": 128000
-      },
+      "kind": "chat",
       "capabilities": {
         "chat": true,
         "vision": true,
         "tools": true
+      },
+      "limit": {
+        "context": 1050000,
+        "output": 128000
       },
       "reasoning": {
         "supported": true,
@@ -3366,14 +3482,15 @@
     {
       "id": "gpt-5.6-terra",
       "name": "GPT-5.6 Terra",
-      "limit": {
-        "context": 1050000,
-        "output": 128000
-      },
+      "kind": "chat",
       "capabilities": {
         "chat": true,
         "vision": true,
         "tools": true
+      },
+      "limit": {
+        "context": 1050000,
+        "output": 128000
       },
       "reasoning": {
         "supported": true,
@@ -3400,16 +3517,84 @@
       ]
     },
     {
+      "id": "gpt-image-1",
+      "name": "gpt-image-1",
+      "kind": "image",
+      "capabilities": {
+        "chat": false,
+        "vision": true,
+        "tools": false
+      },
+      "ports": [
+        {
+          "channel": "openai"
+        }
+      ]
+    },
+    {
+      "id": "gpt-image-1-mini",
+      "name": "gpt-image-1-mini",
+      "kind": "image",
+      "capabilities": {
+        "chat": false,
+        "vision": true,
+        "tools": false
+      },
+      "ports": [
+        {
+          "channel": "openai"
+        }
+      ]
+    },
+    {
+      "id": "gpt-image-1.5",
+      "name": "gpt-image-1.5",
+      "kind": "image",
+      "capabilities": {
+        "chat": false,
+        "vision": true,
+        "tools": false
+      },
+      "ports": [
+        {
+          "channel": "openai"
+        }
+      ]
+    },
+    {
+      "id": "gpt-image-2",
+      "name": "gpt-image-2",
+      "kind": "image",
+      "capabilities": {
+        "chat": false,
+        "vision": true,
+        "tools": false
+      },
+      "ports": [
+        {
+          "channel": "openai",
+          "price": {
+            "currency": "USD",
+            "unit": "per_million_tokens",
+            "input": 5,
+            "output": 30,
+            "cache_read": 1.25
+          }
+        }
+      ]
+    },
+    {
       "id": "gpt-realtime-2.1",
       "name": "GPT-Realtime-2.1",
+      "kind": "audio",
+      "capabilities": {
+        "chat": false,
+        "vision": true,
+        "tools": true
+      },
       "limit": {
         "context": 128000,
         "output": 32000
-      },
-      "capabilities": {
-        "chat": true,
-        "vision": true,
-        "tools": true
       },
       "reasoning": {
         "supported": true,
@@ -3437,14 +3622,15 @@
     {
       "id": "grok-4.20-0309-non-reasoning",
       "name": "Grok 4.20 (Non-Reasoning)",
-      "limit": {
-        "context": 1000000,
-        "output": 30000
-      },
+      "kind": "chat",
       "capabilities": {
         "chat": true,
         "vision": true,
         "tools": true
+      },
+      "limit": {
+        "context": 1000000,
+        "output": 30000
       },
       "ports": [
         {
@@ -3462,14 +3648,15 @@
     {
       "id": "grok-4.20-0309-reasoning",
       "name": "Grok 4.20 (Reasoning)",
-      "limit": {
-        "context": 1000000,
-        "output": 30000
-      },
+      "kind": "chat",
       "capabilities": {
         "chat": true,
         "vision": true,
         "tools": true
+      },
+      "limit": {
+        "context": 1000000,
+        "output": 30000
       },
       "reasoning": {
         "supported": true
@@ -3490,14 +3677,15 @@
     {
       "id": "grok-4.20-multi-agent-0309",
       "name": "Grok 4.20 Multi-Agent",
-      "limit": {
-        "context": 1000000,
-        "output": 30000
-      },
+      "kind": "chat",
       "capabilities": {
         "chat": true,
         "vision": true,
         "tools": false
+      },
+      "limit": {
+        "context": 1000000,
+        "output": 30000
       },
       "reasoning": {
         "supported": true,
@@ -3524,14 +3712,15 @@
     {
       "id": "grok-4.3",
       "name": "Grok 4.3",
-      "limit": {
-        "context": 1000000,
-        "output": 30000
-      },
+      "kind": "chat",
       "capabilities": {
         "chat": true,
         "vision": true,
         "tools": true
+      },
+      "limit": {
+        "context": 1000000,
+        "output": 30000
       },
       "reasoning": {
         "supported": true,
@@ -3557,14 +3746,15 @@
     {
       "id": "grok-4.5",
       "name": "Grok 4.5",
-      "limit": {
-        "context": 500000,
-        "output": 500000
-      },
+      "kind": "chat",
       "capabilities": {
         "chat": true,
         "vision": true,
         "tools": true
+      },
+      "limit": {
+        "context": 500000,
+        "output": 500000
       },
       "reasoning": {
         "supported": true,
@@ -3590,14 +3780,15 @@
     {
       "id": "grok-4.6",
       "name": "Grok 4.6",
-      "limit": {
-        "context": 500000,
-        "output": 500000
-      },
+      "kind": "chat",
       "capabilities": {
         "chat": true,
         "vision": true,
         "tools": true
+      },
+      "limit": {
+        "context": 500000,
+        "output": 500000
       },
       "reasoning": {
         "supported": true,
@@ -3624,14 +3815,15 @@
     {
       "id": "grok-build-0.1",
       "name": "Grok Build 0.1",
-      "limit": {
-        "context": 256000,
-        "output": 256000
-      },
+      "kind": "chat",
       "capabilities": {
         "chat": true,
         "vision": true,
         "tools": true
+      },
+      "limit": {
+        "context": 256000,
+        "output": 256000
       },
       "reasoning": {
         "supported": true
@@ -3652,14 +3844,15 @@
     {
       "id": "grok-imagine-image",
       "name": "Grok Imagine Image",
+      "kind": "image",
+      "capabilities": {
+        "chat": false,
+        "vision": true,
+        "tools": false
+      },
       "limit": {
         "context": 8000,
         "output": 0
-      },
-      "capabilities": {
-        "chat": true,
-        "vision": true,
-        "tools": false
       },
       "ports": [
         {
@@ -3670,14 +3863,15 @@
     {
       "id": "grok-imagine-image-quality",
       "name": "Grok Imagine Image Quality",
+      "kind": "image",
+      "capabilities": {
+        "chat": false,
+        "vision": true,
+        "tools": false
+      },
       "limit": {
         "context": 8000,
         "output": 0
-      },
-      "capabilities": {
-        "chat": true,
-        "vision": true,
-        "tools": false
       },
       "ports": [
         {
@@ -3688,14 +3882,15 @@
     {
       "id": "grok-imagine-video",
       "name": "Grok Imagine Video",
+      "kind": "video",
+      "capabilities": {
+        "chat": false,
+        "vision": true,
+        "tools": false
+      },
       "limit": {
         "context": 1024,
         "output": 0
-      },
-      "capabilities": {
-        "chat": true,
-        "vision": true,
-        "tools": false
       },
       "ports": [
         {
@@ -3706,14 +3901,15 @@
     {
       "id": "grok-imagine-video-1.5",
       "name": "Grok Imagine Video 1.5",
+      "kind": "video",
+      "capabilities": {
+        "chat": false,
+        "vision": true,
+        "tools": false
+      },
       "limit": {
         "context": 1024,
         "output": 0
-      },
-      "capabilities": {
-        "chat": true,
-        "vision": true,
-        "tools": false
       },
       "ports": [
         {
@@ -3724,14 +3920,15 @@
     {
       "id": "kimi-k2-0711-preview",
       "name": "Kimi K2 0711",
-      "limit": {
-        "context": 131072,
-        "output": 16384
-      },
+      "kind": "chat",
       "capabilities": {
         "chat": true,
         "vision": false,
         "tools": true
+      },
+      "limit": {
+        "context": 131072,
+        "output": 16384
       },
       "ports": [
         {
@@ -3749,14 +3946,15 @@
     {
       "id": "kimi-k2-0905-preview",
       "name": "Kimi K2 0905",
-      "limit": {
-        "context": 262144,
-        "output": 262144
-      },
+      "kind": "chat",
       "capabilities": {
         "chat": true,
         "vision": false,
         "tools": true
+      },
+      "limit": {
+        "context": 262144,
+        "output": 262144
       },
       "ports": [
         {
@@ -3774,14 +3972,15 @@
     {
       "id": "kimi-k2-thinking",
       "name": "Kimi K2 Thinking",
-      "limit": {
-        "context": 262144,
-        "output": 262144
-      },
+      "kind": "chat",
       "capabilities": {
         "chat": true,
         "vision": false,
         "tools": true
+      },
+      "limit": {
+        "context": 262144,
+        "output": 262144
       },
       "reasoning": {
         "supported": true
@@ -3802,14 +4001,15 @@
     {
       "id": "kimi-k2-thinking-turbo",
       "name": "Kimi K2 Thinking Turbo",
-      "limit": {
-        "context": 262144,
-        "output": 262144
-      },
+      "kind": "chat",
       "capabilities": {
         "chat": true,
         "vision": false,
         "tools": true
+      },
+      "limit": {
+        "context": 262144,
+        "output": 262144
       },
       "reasoning": {
         "supported": true
@@ -3830,14 +4030,15 @@
     {
       "id": "kimi-k2-turbo-preview",
       "name": "Kimi K2 Turbo",
-      "limit": {
-        "context": 262144,
-        "output": 262144
-      },
+      "kind": "chat",
       "capabilities": {
         "chat": true,
         "vision": false,
         "tools": true
+      },
+      "limit": {
+        "context": 262144,
+        "output": 262144
       },
       "ports": [
         {
@@ -3855,14 +4056,15 @@
     {
       "id": "kimi-k2.5",
       "name": "Kimi K2.5",
-      "limit": {
-        "context": 262144,
-        "output": 262144
-      },
+      "kind": "chat",
       "capabilities": {
         "chat": true,
         "vision": false,
         "tools": true
+      },
+      "limit": {
+        "context": 262144,
+        "output": 262144
       },
       "reasoning": {
         "supported": true
@@ -3883,14 +4085,15 @@
     {
       "id": "kimi-k2.6",
       "name": "Kimi K2.6",
-      "limit": {
-        "context": 262144,
-        "output": 262144
-      },
+      "kind": "chat",
       "capabilities": {
         "chat": true,
         "vision": true,
         "tools": true
+      },
+      "limit": {
+        "context": 262144,
+        "output": 262144
       },
       "reasoning": {
         "supported": true
@@ -3911,14 +4114,15 @@
     {
       "id": "kimi-k2.7-code",
       "name": "Kimi K2.7 Code",
-      "limit": {
-        "context": 262144,
-        "output": 262144
-      },
+      "kind": "chat",
       "capabilities": {
         "chat": true,
         "vision": true,
         "tools": true
+      },
+      "limit": {
+        "context": 262144,
+        "output": 262144
       },
       "reasoning": {
         "supported": true
@@ -3939,14 +4143,15 @@
     {
       "id": "kimi-k2.7-code-highspeed",
       "name": "Kimi K2.7 Code HighSpeed",
-      "limit": {
-        "context": 262144,
-        "output": 262144
-      },
+      "kind": "chat",
       "capabilities": {
         "chat": true,
         "vision": true,
         "tools": true
+      },
+      "limit": {
+        "context": 262144,
+        "output": 262144
       },
       "reasoning": {
         "supported": true
@@ -3967,14 +4172,15 @@
     {
       "id": "kimi-k3",
       "name": "Kimi K3",
-      "limit": {
-        "context": 1048576,
-        "output": 131072
-      },
+      "kind": "chat",
       "capabilities": {
         "chat": true,
         "vision": true,
         "tools": true
+      },
+      "limit": {
+        "context": 1048576,
+        "output": 131072
       },
       "reasoning": {
         "supported": true,
@@ -4000,14 +4206,15 @@
     {
       "id": "lyria-3-clip-preview",
       "name": "Lyria 3 Clip Preview",
+      "kind": "audio",
+      "capabilities": {
+        "chat": false,
+        "vision": true,
+        "tools": false
+      },
       "limit": {
         "context": 1048576,
         "output": 65536
-      },
-      "capabilities": {
-        "chat": true,
-        "vision": true,
-        "tools": false
       },
       "ports": [
         {
@@ -4024,14 +4231,15 @@
     {
       "id": "lyria-3-pro-preview",
       "name": "Lyria 3 Pro Preview",
+      "kind": "audio",
+      "capabilities": {
+        "chat": false,
+        "vision": true,
+        "tools": false
+      },
       "limit": {
         "context": 1048576,
         "output": 65536
-      },
-      "capabilities": {
-        "chat": true,
-        "vision": true,
-        "tools": false
       },
       "ports": [
         {
@@ -4048,14 +4256,15 @@
     {
       "id": "mimo-v2-flash",
       "name": "MiMo-V2-Flash",
-      "limit": {
-        "context": 262144,
-        "output": 65536
-      },
+      "kind": "chat",
       "capabilities": {
         "chat": true,
         "vision": false,
         "tools": true
+      },
+      "limit": {
+        "context": 262144,
+        "output": 65536
       },
       "reasoning": {
         "supported": true
@@ -4076,14 +4285,15 @@
     {
       "id": "mimo-v2-omni",
       "name": "MiMo-V2-Omni",
-      "limit": {
-        "context": 262144,
-        "output": 131072
-      },
+      "kind": "chat",
       "capabilities": {
         "chat": true,
         "vision": true,
         "tools": true
+      },
+      "limit": {
+        "context": 262144,
+        "output": 131072
       },
       "reasoning": {
         "supported": true
@@ -4104,14 +4314,15 @@
     {
       "id": "mimo-v2-pro",
       "name": "MiMo-V2-Pro",
-      "limit": {
-        "context": 1048576,
-        "output": 131072
-      },
+      "kind": "chat",
       "capabilities": {
         "chat": true,
         "vision": false,
         "tools": true
+      },
+      "limit": {
+        "context": 1048576,
+        "output": 131072
       },
       "reasoning": {
         "supported": true
@@ -4132,14 +4343,15 @@
     {
       "id": "mimo-v2.5",
       "name": "MiMo-V2.5",
-      "limit": {
-        "context": 1048576,
-        "output": 131072
-      },
+      "kind": "chat",
       "capabilities": {
         "chat": true,
         "vision": true,
         "tools": true
+      },
+      "limit": {
+        "context": 1048576,
+        "output": 131072
       },
       "reasoning": {
         "supported": true
@@ -4160,14 +4372,15 @@
     {
       "id": "mimo-v2.5-pro",
       "name": "MiMo-V2.5-Pro",
-      "limit": {
-        "context": 1048576,
-        "output": 131072
-      },
+      "kind": "chat",
       "capabilities": {
         "chat": true,
         "vision": false,
         "tools": true
+      },
+      "limit": {
+        "context": 1048576,
+        "output": 131072
       },
       "reasoning": {
         "supported": true
@@ -4188,14 +4401,15 @@
     {
       "id": "mimo-v2.5-pro-ultraspeed",
       "name": "MiMo-V2.5-Pro-UltraSpeed",
-      "limit": {
-        "context": 1048576,
-        "output": 131072
-      },
+      "kind": "chat",
       "capabilities": {
         "chat": true,
         "vision": false,
         "tools": true
+      },
+      "limit": {
+        "context": 1048576,
+        "output": 131072
       },
       "reasoning": {
         "supported": true
@@ -4216,14 +4430,15 @@
     {
       "id": "o1",
       "name": "o1",
-      "limit": {
-        "context": 200000,
-        "output": 100000
-      },
+      "kind": "chat",
       "capabilities": {
         "chat": true,
         "vision": true,
         "tools": true
+      },
+      "limit": {
+        "context": 200000,
+        "output": 100000
       },
       "reasoning": {
         "supported": true,
@@ -4249,14 +4464,15 @@
     {
       "id": "o1-pro",
       "name": "o1-pro",
-      "limit": {
-        "context": 200000,
-        "output": 100000
-      },
+      "kind": "chat",
       "capabilities": {
         "chat": true,
         "vision": true,
         "tools": true
+      },
+      "limit": {
+        "context": 200000,
+        "output": 100000
       },
       "reasoning": {
         "supported": true,
@@ -4281,14 +4497,15 @@
     {
       "id": "o3",
       "name": "o3",
-      "limit": {
-        "context": 200000,
-        "output": 100000
-      },
+      "kind": "chat",
       "capabilities": {
         "chat": true,
         "vision": true,
         "tools": true
+      },
+      "limit": {
+        "context": 200000,
+        "output": 100000
       },
       "reasoning": {
         "supported": true,
@@ -4314,14 +4531,15 @@
     {
       "id": "o3-mini",
       "name": "o3-mini",
-      "limit": {
-        "context": 200000,
-        "output": 100000
-      },
+      "kind": "chat",
       "capabilities": {
         "chat": true,
         "vision": false,
         "tools": true
+      },
+      "limit": {
+        "context": 200000,
+        "output": 100000
       },
       "reasoning": {
         "supported": true,
@@ -4347,14 +4565,15 @@
     {
       "id": "o3-pro",
       "name": "o3-pro",
-      "limit": {
-        "context": 200000,
-        "output": 100000
-      },
+      "kind": "chat",
       "capabilities": {
         "chat": true,
         "vision": true,
         "tools": true
+      },
+      "limit": {
+        "context": 200000,
+        "output": 100000
       },
       "reasoning": {
         "supported": true,
@@ -4379,14 +4598,15 @@
     {
       "id": "o4-mini",
       "name": "o4-mini",
-      "limit": {
-        "context": 200000,
-        "output": 100000
-      },
+      "kind": "chat",
       "capabilities": {
         "chat": true,
         "vision": true,
         "tools": true
+      },
+      "limit": {
+        "context": 200000,
+        "output": 100000
       },
       "reasoning": {
         "supported": true,
@@ -4412,14 +4632,15 @@
     {
       "id": "qvq-max",
       "name": "QVQ Max",
-      "limit": {
-        "context": 131072,
-        "output": 8192
-      },
+      "kind": "chat",
       "capabilities": {
         "chat": true,
         "vision": false,
         "tools": true
+      },
+      "limit": {
+        "context": 131072,
+        "output": 8192
       },
       "reasoning": {
         "supported": true
@@ -4439,14 +4660,15 @@
     {
       "id": "qwen-flash",
       "name": "Qwen Flash",
-      "limit": {
-        "context": 1000000,
-        "output": 32768
-      },
+      "kind": "chat",
       "capabilities": {
         "chat": true,
         "vision": false,
         "tools": true
+      },
+      "limit": {
+        "context": 1000000,
+        "output": 32768
       },
       "reasoning": {
         "supported": true
@@ -4466,14 +4688,15 @@
     {
       "id": "qwen-max",
       "name": "Qwen Max",
-      "limit": {
-        "context": 32768,
-        "output": 8192
-      },
+      "kind": "chat",
       "capabilities": {
         "chat": true,
         "vision": false,
         "tools": true
+      },
+      "limit": {
+        "context": 32768,
+        "output": 8192
       },
       "ports": [
         {
@@ -4490,14 +4713,15 @@
     {
       "id": "qwen-mt-plus",
       "name": "Qwen-MT Plus",
-      "limit": {
-        "context": 16384,
-        "output": 8192
-      },
+      "kind": "chat",
       "capabilities": {
         "chat": true,
         "vision": false,
         "tools": false
+      },
+      "limit": {
+        "context": 16384,
+        "output": 8192
       },
       "ports": [
         {
@@ -4514,14 +4738,15 @@
     {
       "id": "qwen-mt-turbo",
       "name": "Qwen-MT Turbo",
-      "limit": {
-        "context": 16384,
-        "output": 8192
-      },
+      "kind": "chat",
       "capabilities": {
         "chat": true,
         "vision": false,
         "tools": false
+      },
+      "limit": {
+        "context": 16384,
+        "output": 8192
       },
       "ports": [
         {
@@ -4538,14 +4763,15 @@
     {
       "id": "qwen-omni-turbo",
       "name": "Qwen-Omni Turbo",
+      "kind": "audio",
+      "capabilities": {
+        "chat": false,
+        "vision": false,
+        "tools": true
+      },
       "limit": {
         "context": 32768,
         "output": 2048
-      },
-      "capabilities": {
-        "chat": true,
-        "vision": false,
-        "tools": true
       },
       "ports": [
         {
@@ -4562,14 +4788,15 @@
     {
       "id": "qwen-omni-turbo-realtime",
       "name": "Qwen-Omni Turbo Realtime",
+      "kind": "audio",
+      "capabilities": {
+        "chat": false,
+        "vision": false,
+        "tools": true
+      },
       "limit": {
         "context": 32768,
         "output": 2048
-      },
-      "capabilities": {
-        "chat": true,
-        "vision": false,
-        "tools": true
       },
       "ports": [
         {
@@ -4586,14 +4813,15 @@
     {
       "id": "qwen-plus",
       "name": "Qwen Plus",
-      "limit": {
-        "context": 1000000,
-        "output": 32768
-      },
+      "kind": "chat",
       "capabilities": {
         "chat": true,
         "vision": false,
         "tools": true
+      },
+      "limit": {
+        "context": 1000000,
+        "output": 32768
       },
       "reasoning": {
         "supported": true
@@ -4614,14 +4842,15 @@
     {
       "id": "qwen-plus-character-ja",
       "name": "Qwen Plus Character (Japanese)",
-      "limit": {
-        "context": 8192,
-        "output": 512
-      },
+      "kind": "chat",
       "capabilities": {
         "chat": true,
         "vision": false,
         "tools": true
+      },
+      "limit": {
+        "context": 8192,
+        "output": 512
       },
       "ports": [
         {
@@ -4638,14 +4867,15 @@
     {
       "id": "qwen-turbo",
       "name": "Qwen Turbo",
-      "limit": {
-        "context": 1000000,
-        "output": 16384
-      },
+      "kind": "chat",
       "capabilities": {
         "chat": true,
         "vision": false,
         "tools": true
+      },
+      "limit": {
+        "context": 1000000,
+        "output": 16384
       },
       "reasoning": {
         "supported": true
@@ -4666,14 +4896,15 @@
     {
       "id": "qwen-vl-max",
       "name": "Qwen-VL Max",
-      "limit": {
-        "context": 131072,
-        "output": 8192
-      },
+      "kind": "chat",
       "capabilities": {
         "chat": true,
         "vision": false,
         "tools": true
+      },
+      "limit": {
+        "context": 131072,
+        "output": 8192
       },
       "ports": [
         {
@@ -4690,14 +4921,15 @@
     {
       "id": "qwen-vl-ocr",
       "name": "Qwen-VL OCR",
-      "limit": {
-        "context": 34096,
-        "output": 4096
-      },
+      "kind": "chat",
       "capabilities": {
         "chat": true,
         "vision": false,
         "tools": false
+      },
+      "limit": {
+        "context": 34096,
+        "output": 4096
       },
       "ports": [
         {
@@ -4714,14 +4946,15 @@
     {
       "id": "qwen-vl-plus",
       "name": "Qwen-VL Plus",
-      "limit": {
-        "context": 131072,
-        "output": 8192
-      },
+      "kind": "chat",
       "capabilities": {
         "chat": true,
         "vision": false,
         "tools": true
+      },
+      "limit": {
+        "context": 131072,
+        "output": 8192
       },
       "ports": [
         {
@@ -4738,14 +4971,15 @@
     {
       "id": "qwen2-5-14b-instruct",
       "name": "Qwen2.5 14B Instruct",
-      "limit": {
-        "context": 131072,
-        "output": 8192
-      },
+      "kind": "chat",
       "capabilities": {
         "chat": true,
         "vision": false,
         "tools": true
+      },
+      "limit": {
+        "context": 131072,
+        "output": 8192
       },
       "ports": [
         {
@@ -4762,14 +4996,15 @@
     {
       "id": "qwen2-5-32b-instruct",
       "name": "Qwen2.5 32B Instruct",
-      "limit": {
-        "context": 131072,
-        "output": 8192
-      },
+      "kind": "chat",
       "capabilities": {
         "chat": true,
         "vision": false,
         "tools": true
+      },
+      "limit": {
+        "context": 131072,
+        "output": 8192
       },
       "ports": [
         {
@@ -4786,14 +5021,15 @@
     {
       "id": "qwen2-5-72b-instruct",
       "name": "Qwen2.5 72B Instruct",
-      "limit": {
-        "context": 131072,
-        "output": 8192
-      },
+      "kind": "chat",
       "capabilities": {
         "chat": true,
         "vision": false,
         "tools": true
+      },
+      "limit": {
+        "context": 131072,
+        "output": 8192
       },
       "ports": [
         {
@@ -4810,14 +5046,15 @@
     {
       "id": "qwen2-5-7b-instruct",
       "name": "Qwen2.5 7B Instruct",
-      "limit": {
-        "context": 131072,
-        "output": 8192
-      },
+      "kind": "chat",
       "capabilities": {
         "chat": true,
         "vision": false,
         "tools": true
+      },
+      "limit": {
+        "context": 131072,
+        "output": 8192
       },
       "ports": [
         {
@@ -4834,14 +5071,15 @@
     {
       "id": "qwen2-5-omni-7b",
       "name": "Qwen2.5-Omni 7B",
+      "kind": "audio",
+      "capabilities": {
+        "chat": false,
+        "vision": false,
+        "tools": true
+      },
       "limit": {
         "context": 32768,
         "output": 2048
-      },
-      "capabilities": {
-        "chat": true,
-        "vision": false,
-        "tools": true
       },
       "ports": [
         {
@@ -4858,14 +5096,15 @@
     {
       "id": "qwen2-5-vl-72b-instruct",
       "name": "Qwen2.5-VL 72B Instruct",
-      "limit": {
-        "context": 131072,
-        "output": 8192
-      },
+      "kind": "chat",
       "capabilities": {
         "chat": true,
         "vision": false,
         "tools": true
+      },
+      "limit": {
+        "context": 131072,
+        "output": 8192
       },
       "ports": [
         {
@@ -4882,14 +5121,15 @@
     {
       "id": "qwen2-5-vl-7b-instruct",
       "name": "Qwen2.5-VL 7B Instruct",
-      "limit": {
-        "context": 131072,
-        "output": 8192
-      },
+      "kind": "chat",
       "capabilities": {
         "chat": true,
         "vision": false,
         "tools": true
+      },
+      "limit": {
+        "context": 131072,
+        "output": 8192
       },
       "ports": [
         {
@@ -4906,14 +5146,15 @@
     {
       "id": "qwen3-14b",
       "name": "Qwen3 14B",
-      "limit": {
-        "context": 131072,
-        "output": 8192
-      },
+      "kind": "chat",
       "capabilities": {
         "chat": true,
         "vision": false,
         "tools": true
+      },
+      "limit": {
+        "context": 131072,
+        "output": 8192
       },
       "reasoning": {
         "supported": true
@@ -4934,14 +5175,15 @@
     {
       "id": "qwen3-235b-a22b",
       "name": "Qwen3 235B-A22B",
-      "limit": {
-        "context": 131072,
-        "output": 16384
-      },
+      "kind": "chat",
       "capabilities": {
         "chat": true,
         "vision": false,
         "tools": true
+      },
+      "limit": {
+        "context": 131072,
+        "output": 16384
       },
       "reasoning": {
         "supported": true
@@ -4962,14 +5204,15 @@
     {
       "id": "qwen3-32b",
       "name": "Qwen3 32B",
-      "limit": {
-        "context": 131072,
-        "output": 16384
-      },
+      "kind": "chat",
       "capabilities": {
         "chat": true,
         "vision": false,
         "tools": true
+      },
+      "limit": {
+        "context": 131072,
+        "output": 16384
       },
       "reasoning": {
         "supported": true
@@ -4990,14 +5233,15 @@
     {
       "id": "qwen3-8b",
       "name": "Qwen3 8B",
-      "limit": {
-        "context": 131072,
-        "output": 8192
-      },
+      "kind": "chat",
       "capabilities": {
         "chat": true,
         "vision": false,
         "tools": true
+      },
+      "limit": {
+        "context": 131072,
+        "output": 8192
       },
       "reasoning": {
         "supported": true
@@ -5018,14 +5262,15 @@
     {
       "id": "qwen3-asr-flash",
       "name": "Qwen3-ASR Flash",
-      "limit": {
-        "context": 53248,
-        "output": 4096
-      },
+      "kind": "chat",
       "capabilities": {
         "chat": true,
         "vision": false,
         "tools": false
+      },
+      "limit": {
+        "context": 53248,
+        "output": 4096
       },
       "ports": [
         {
@@ -5042,14 +5287,15 @@
     {
       "id": "qwen3-coder-30b-a3b-instruct",
       "name": "Qwen3-Coder 30B-A3B Instruct",
-      "limit": {
-        "context": 262144,
-        "output": 65536
-      },
+      "kind": "chat",
       "capabilities": {
         "chat": true,
         "vision": false,
         "tools": true
+      },
+      "limit": {
+        "context": 262144,
+        "output": 65536
       },
       "ports": [
         {
@@ -5066,14 +5312,15 @@
     {
       "id": "qwen3-coder-480b-a35b-instruct",
       "name": "Qwen3-Coder 480B-A35B Instruct",
-      "limit": {
-        "context": 262144,
-        "output": 65536
-      },
+      "kind": "chat",
       "capabilities": {
         "chat": true,
         "vision": false,
         "tools": true
+      },
+      "limit": {
+        "context": 262144,
+        "output": 65536
       },
       "ports": [
         {
@@ -5090,14 +5337,15 @@
     {
       "id": "qwen3-coder-flash",
       "name": "Qwen3 Coder Flash",
-      "limit": {
-        "context": 1000000,
-        "output": 65536
-      },
+      "kind": "chat",
       "capabilities": {
         "chat": true,
         "vision": false,
         "tools": true
+      },
+      "limit": {
+        "context": 1000000,
+        "output": 65536
       },
       "ports": [
         {
@@ -5114,14 +5362,15 @@
     {
       "id": "qwen3-coder-plus",
       "name": "Qwen3 Coder Plus",
-      "limit": {
-        "context": 1048576,
-        "output": 65536
-      },
+      "kind": "chat",
       "capabilities": {
         "chat": true,
         "vision": false,
         "tools": true
+      },
+      "limit": {
+        "context": 1048576,
+        "output": 65536
       },
       "ports": [
         {
@@ -5138,14 +5387,15 @@
     {
       "id": "qwen3-livetranslate-flash-realtime",
       "name": "Qwen3-LiveTranslate Flash Realtime",
+      "kind": "audio",
+      "capabilities": {
+        "chat": false,
+        "vision": false,
+        "tools": false
+      },
       "limit": {
         "context": 53248,
         "output": 4096
-      },
-      "capabilities": {
-        "chat": true,
-        "vision": false,
-        "tools": false
       },
       "ports": [
         {
@@ -5162,14 +5412,15 @@
     {
       "id": "qwen3-max",
       "name": "Qwen3 Max",
-      "limit": {
-        "context": 262144,
-        "output": 65536
-      },
+      "kind": "chat",
       "capabilities": {
         "chat": true,
         "vision": false,
         "tools": true
+      },
+      "limit": {
+        "context": 262144,
+        "output": 65536
       },
       "ports": [
         {
@@ -5186,14 +5437,15 @@
     {
       "id": "qwen3-next-80b-a3b-instruct",
       "name": "Qwen3-Next 80B-A3B Instruct",
-      "limit": {
-        "context": 131072,
-        "output": 32768
-      },
+      "kind": "chat",
       "capabilities": {
         "chat": true,
         "vision": false,
         "tools": true
+      },
+      "limit": {
+        "context": 131072,
+        "output": 32768
       },
       "ports": [
         {
@@ -5210,14 +5462,15 @@
     {
       "id": "qwen3-next-80b-a3b-thinking",
       "name": "Qwen3-Next 80B-A3B (Thinking)",
-      "limit": {
-        "context": 131072,
-        "output": 32768
-      },
+      "kind": "chat",
       "capabilities": {
         "chat": true,
         "vision": false,
         "tools": true
+      },
+      "limit": {
+        "context": 131072,
+        "output": 32768
       },
       "reasoning": {
         "supported": true
@@ -5237,14 +5490,15 @@
     {
       "id": "qwen3-omni-flash",
       "name": "Qwen3-Omni Flash",
+      "kind": "audio",
+      "capabilities": {
+        "chat": false,
+        "vision": false,
+        "tools": true
+      },
       "limit": {
         "context": 65536,
         "output": 16384
-      },
-      "capabilities": {
-        "chat": true,
-        "vision": false,
-        "tools": true
       },
       "reasoning": {
         "supported": true
@@ -5264,14 +5518,15 @@
     {
       "id": "qwen3-omni-flash-realtime",
       "name": "Qwen3-Omni Flash Realtime",
+      "kind": "audio",
+      "capabilities": {
+        "chat": false,
+        "vision": false,
+        "tools": true
+      },
       "limit": {
         "context": 65536,
         "output": 16384
-      },
-      "capabilities": {
-        "chat": true,
-        "vision": false,
-        "tools": true
       },
       "ports": [
         {
@@ -5288,14 +5543,15 @@
     {
       "id": "qwen3-vl-235b-a22b",
       "name": "Qwen3-VL 235B-A22B",
-      "limit": {
-        "context": 131072,
-        "output": 32768
-      },
+      "kind": "chat",
       "capabilities": {
         "chat": true,
         "vision": false,
         "tools": true
+      },
+      "limit": {
+        "context": 131072,
+        "output": 32768
       },
       "reasoning": {
         "supported": true
@@ -5316,14 +5572,15 @@
     {
       "id": "qwen3-vl-30b-a3b",
       "name": "Qwen3-VL 30B-A3B",
-      "limit": {
-        "context": 131072,
-        "output": 32768
-      },
+      "kind": "chat",
       "capabilities": {
         "chat": true,
         "vision": false,
         "tools": true
+      },
+      "limit": {
+        "context": 131072,
+        "output": 32768
       },
       "reasoning": {
         "supported": true
@@ -5344,14 +5601,15 @@
     {
       "id": "qwen3-vl-plus",
       "name": "Qwen3-VL Plus",
-      "limit": {
-        "context": 262144,
-        "output": 32768
-      },
+      "kind": "chat",
       "capabilities": {
         "chat": true,
         "vision": false,
         "tools": true
+      },
+      "limit": {
+        "context": 262144,
+        "output": 32768
       },
       "reasoning": {
         "supported": true
@@ -5372,14 +5630,15 @@
     {
       "id": "qwen3.5-122b-a10b",
       "name": "Qwen3.5 122B-A10B",
-      "limit": {
-        "context": 262144,
-        "output": 65536
-      },
+      "kind": "chat",
       "capabilities": {
         "chat": true,
         "vision": true,
         "tools": true
+      },
+      "limit": {
+        "context": 262144,
+        "output": 65536
       },
       "reasoning": {
         "supported": true
@@ -5399,14 +5658,15 @@
     {
       "id": "qwen3.5-27b",
       "name": "Qwen3.5 27B",
-      "limit": {
-        "context": 262144,
-        "output": 65536
-      },
+      "kind": "chat",
       "capabilities": {
         "chat": true,
         "vision": true,
         "tools": true
+      },
+      "limit": {
+        "context": 262144,
+        "output": 65536
       },
       "reasoning": {
         "supported": true
@@ -5426,14 +5686,15 @@
     {
       "id": "qwen3.5-35b-a3b",
       "name": "Qwen3.5 35B-A3B",
-      "limit": {
-        "context": 262144,
-        "output": 65536
-      },
+      "kind": "chat",
       "capabilities": {
         "chat": true,
         "vision": true,
         "tools": true
+      },
+      "limit": {
+        "context": 262144,
+        "output": 65536
       },
       "reasoning": {
         "supported": true
@@ -5453,14 +5714,15 @@
     {
       "id": "qwen3.5-397b-a17b",
       "name": "Qwen3.5 397B-A17B",
-      "limit": {
-        "context": 262144,
-        "output": 65536
-      },
+      "kind": "chat",
       "capabilities": {
         "chat": true,
         "vision": true,
         "tools": true
+      },
+      "limit": {
+        "context": 262144,
+        "output": 65536
       },
       "reasoning": {
         "supported": true
@@ -5480,14 +5742,15 @@
     {
       "id": "qwen3.5-plus",
       "name": "Qwen3.5 Plus",
-      "limit": {
-        "context": 1000000,
-        "output": 65536
-      },
+      "kind": "chat",
       "capabilities": {
         "chat": true,
         "vision": false,
         "tools": true
+      },
+      "limit": {
+        "context": 1000000,
+        "output": 65536
       },
       "reasoning": {
         "supported": true
@@ -5508,14 +5771,15 @@
     {
       "id": "qwen3.6-27b",
       "name": "Qwen3.6 27B",
-      "limit": {
-        "context": 262144,
-        "output": 65536
-      },
+      "kind": "chat",
       "capabilities": {
         "chat": true,
         "vision": true,
         "tools": true
+      },
+      "limit": {
+        "context": 262144,
+        "output": 65536
       },
       "reasoning": {
         "supported": true
@@ -5535,14 +5799,15 @@
     {
       "id": "qwen3.6-35b-a3b",
       "name": "Qwen3.6 35B-A3B",
-      "limit": {
-        "context": 262144,
-        "output": 65536
-      },
+      "kind": "chat",
       "capabilities": {
         "chat": true,
         "vision": true,
         "tools": true
+      },
+      "limit": {
+        "context": 262144,
+        "output": 65536
       },
       "reasoning": {
         "supported": true
@@ -5562,14 +5827,15 @@
     {
       "id": "qwen3.6-flash",
       "name": "Qwen3.6 Flash",
-      "limit": {
-        "context": 1000000,
-        "output": 65536
-      },
+      "kind": "chat",
       "capabilities": {
         "chat": true,
         "vision": true,
         "tools": true
+      },
+      "limit": {
+        "context": 1000000,
+        "output": 65536
       },
       "reasoning": {
         "supported": true
@@ -5590,14 +5856,15 @@
     {
       "id": "qwen3.6-max-preview",
       "name": "Qwen3.6 Max Preview",
-      "limit": {
-        "context": 262144,
-        "output": 65536
-      },
+      "kind": "chat",
       "capabilities": {
         "chat": true,
         "vision": false,
         "tools": true
+      },
+      "limit": {
+        "context": 262144,
+        "output": 65536
       },
       "reasoning": {
         "supported": true
@@ -5619,14 +5886,15 @@
     {
       "id": "qwen3.6-plus",
       "name": "Qwen3.6 Plus",
-      "limit": {
-        "context": 1000000,
-        "output": 65536
-      },
+      "kind": "chat",
       "capabilities": {
         "chat": true,
         "vision": false,
         "tools": true
+      },
+      "limit": {
+        "context": 1000000,
+        "output": 65536
       },
       "reasoning": {
         "supported": true
@@ -5648,14 +5916,15 @@
     {
       "id": "qwen3.7-max",
       "name": "Qwen3.7 Max",
-      "limit": {
-        "context": 1000000,
-        "output": 65536
-      },
+      "kind": "chat",
       "capabilities": {
         "chat": true,
         "vision": false,
         "tools": true
+      },
+      "limit": {
+        "context": 1000000,
+        "output": 65536
       },
       "reasoning": {
         "supported": true
@@ -5677,14 +5946,15 @@
     {
       "id": "qwen3.7-plus",
       "name": "Qwen3.7 Plus",
-      "limit": {
-        "context": 1000000,
-        "output": 65536
-      },
+      "kind": "chat",
       "capabilities": {
         "chat": true,
         "vision": false,
         "tools": true
+      },
+      "limit": {
+        "context": 1000000,
+        "output": 65536
       },
       "reasoning": {
         "supported": true
@@ -5706,14 +5976,15 @@
     {
       "id": "qwen3.8-max",
       "name": "Qwen3.8 Max",
-      "limit": {
-        "context": 1000000,
-        "output": 131072
-      },
+      "kind": "chat",
       "capabilities": {
         "chat": true,
         "vision": true,
         "tools": true
+      },
+      "limit": {
+        "context": 1000000,
+        "output": 131072
       },
       "reasoning": {
         "supported": true,
@@ -5740,14 +6011,15 @@
     {
       "id": "qwq-plus",
       "name": "QwQ Plus",
-      "limit": {
-        "context": 131072,
-        "output": 8192
-      },
+      "kind": "chat",
       "capabilities": {
         "chat": true,
         "vision": false,
         "tools": true
+      },
+      "limit": {
+        "context": 131072,
+        "output": 8192
       },
       "reasoning": {
         "supported": true
@@ -5767,14 +6039,15 @@
     {
       "id": "step-1-32k",
       "name": "Step 1 (32K)",
-      "limit": {
-        "context": 32768,
-        "output": 32768
-      },
+      "kind": "chat",
       "capabilities": {
         "chat": true,
         "vision": false,
         "tools": true
+      },
+      "limit": {
+        "context": 32768,
+        "output": 32768
       },
       "ports": [
         {
@@ -5792,14 +6065,15 @@
     {
       "id": "step-2-16k",
       "name": "Step 2 (16K)",
-      "limit": {
-        "context": 16384,
-        "output": 8192
-      },
+      "kind": "chat",
       "capabilities": {
         "chat": true,
         "vision": false,
         "tools": true
+      },
+      "limit": {
+        "context": 16384,
+        "output": 8192
       },
       "ports": [
         {
@@ -5817,14 +6091,15 @@
     {
       "id": "step-3.5-flash",
       "name": "Step 3.5 Flash",
-      "limit": {
-        "context": 256000,
-        "output": 256000
-      },
+      "kind": "chat",
       "capabilities": {
         "chat": true,
         "vision": false,
         "tools": true
+      },
+      "limit": {
+        "context": 256000,
+        "output": 256000
       },
       "reasoning": {
         "supported": true,
@@ -5852,14 +6127,15 @@
     {
       "id": "step-3.7-flash",
       "name": "Step 3.7 Flash",
-      "limit": {
-        "context": 256000,
-        "output": 256000
-      },
+      "kind": "chat",
       "capabilities": {
         "chat": true,
         "vision": true,
         "tools": true
+      },
+      "limit": {
+        "context": 256000,
+        "output": 256000
       },
       "reasoning": {
         "supported": true,
@@ -5883,16 +6159,47 @@
       ]
     },
     {
+      "id": "step-tts-2",
+      "name": "Step TTS 2",
+      "kind": "audio",
+      "capabilities": {
+        "chat": false,
+        "vision": false,
+        "tools": false
+      },
+      "ports": [
+        {
+          "channel": "stepfun"
+        }
+      ]
+    },
+    {
+      "id": "stepaudio-2.5-tts",
+      "name": "StepAudio 2.5 TTS",
+      "kind": "audio",
+      "capabilities": {
+        "chat": false,
+        "vision": false,
+        "tools": false
+      },
+      "ports": [
+        {
+          "channel": "stepfun"
+        }
+      ]
+    },
+    {
       "id": "text-embedding-3-large",
       "name": "text-embedding-3-large",
-      "limit": {
-        "context": 8191,
-        "output": 3072
-      },
+      "kind": "chat",
       "capabilities": {
         "chat": true,
         "vision": false,
         "tools": false
+      },
+      "limit": {
+        "context": 8191,
+        "output": 3072
       },
       "ports": [
         {
@@ -5909,14 +6216,15 @@
     {
       "id": "text-embedding-3-small",
       "name": "text-embedding-3-small",
-      "limit": {
-        "context": 8191,
-        "output": 1536
-      },
+      "kind": "chat",
       "capabilities": {
         "chat": true,
         "vision": false,
         "tools": false
+      },
+      "limit": {
+        "context": 8191,
+        "output": 1536
       },
       "ports": [
         {
@@ -5933,14 +6241,15 @@
     {
       "id": "text-embedding-ada-002",
       "name": "text-embedding-ada-002",
-      "limit": {
-        "context": 8192,
-        "output": 1536
-      },
+      "kind": "chat",
       "capabilities": {
         "chat": true,
         "vision": false,
         "tools": false
+      },
+      "limit": {
+        "context": 8192,
+        "output": 1536
       },
       "ports": [
         {
@@ -5957,14 +6266,15 @@
     {
       "id": "v0-1.0-md",
       "name": "v0-1.0-md",
-      "limit": {
-        "context": 128000,
-        "output": 32000
-      },
+      "kind": "chat",
       "capabilities": {
         "chat": true,
         "vision": true,
         "tools": true
+      },
+      "limit": {
+        "context": 128000,
+        "output": 32000
       },
       "reasoning": {
         "supported": true
@@ -5984,14 +6294,15 @@
     {
       "id": "v0-1.5-lg",
       "name": "v0-1.5-lg",
-      "limit": {
-        "context": 512000,
-        "output": 32000
-      },
+      "kind": "chat",
       "capabilities": {
         "chat": true,
         "vision": true,
         "tools": true
+      },
+      "limit": {
+        "context": 512000,
+        "output": 32000
       },
       "reasoning": {
         "supported": true
@@ -6011,14 +6322,15 @@
     {
       "id": "v0-1.5-md",
       "name": "v0-1.5-md",
-      "limit": {
-        "context": 128000,
-        "output": 32000
-      },
+      "kind": "chat",
       "capabilities": {
         "chat": true,
         "vision": true,
         "tools": true
+      },
+      "limit": {
+        "context": 128000,
+        "output": 32000
       },
       "reasoning": {
         "supported": true
@@ -6038,14 +6350,15 @@
     {
       "id": "veo-3.1-fast-generate-preview",
       "name": "Veo 3.1 fast",
+      "kind": "video",
+      "capabilities": {
+        "chat": false,
+        "vision": true,
+        "tools": false
+      },
       "limit": {
         "context": 480,
         "output": 8192
-      },
-      "capabilities": {
-        "chat": true,
-        "vision": true,
-        "tools": false
       },
       "ports": [
         {
@@ -6056,14 +6369,15 @@
     {
       "id": "veo-3.1-generate-preview",
       "name": "Veo 3.1",
+      "kind": "video",
+      "capabilities": {
+        "chat": false,
+        "vision": true,
+        "tools": false
+      },
       "limit": {
         "context": 480,
         "output": 8192
-      },
-      "capabilities": {
-        "chat": true,
-        "vision": true,
-        "tools": false
       },
       "ports": [
         {
@@ -6074,14 +6388,15 @@
     {
       "id": "veo-3.1-lite-generate-preview",
       "name": "Veo 3.1 lite",
+      "kind": "video",
+      "capabilities": {
+        "chat": false,
+        "vision": true,
+        "tools": false
+      },
       "limit": {
         "context": 480,
         "output": 8192
-      },
-      "capabilities": {
-        "chat": true,
-        "vision": true,
-        "tools": false
       },
       "ports": [
         {

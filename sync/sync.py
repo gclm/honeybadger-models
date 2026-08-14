@@ -42,6 +42,19 @@ def sort_efforts(efforts):
     return known + extra
 
 
+def derive_kind(m):
+    """输出模态推导类型：特定优先（image > audio > video > 纯 text=chat）。
+
+    chatgpt-image-latest 输出 [text,image] → image（图像生成模型，非对话）。
+    无 modalities 的条目默认 chat（上游数据缺失时的保守归类）。
+    """
+    out = ((m.get("modalities") or {}).get("output")) or []
+    for mod, kind in (("image", "image"), ("audio", "audio"), ("video", "video")):
+        if mod in out:
+            return kind
+    return "chat"
+
+
 def model_efforts(m):
     for opt in m.get("reasoning_options") or []:
         if opt.get("type") == "effort":
@@ -98,21 +111,23 @@ def main():
                     canon, snap_alias = stripped, mid
 
                 base_m = models.get(canon, m)  # 快照的 name/limit 取 base
+                kind = derive_kind(base_m)
                 e = entries.get(canon)
                 if e is None:
                     e = entries[canon] = {
                         "id": canon,
                         "name": base_m.get("name") or canon,
-                        "limit": {
-                            "context": (base_m.get("limit") or {}).get("context", 0),
-                            "output": (base_m.get("limit") or {}).get("output", 0),
-                        },
+                        "kind": kind,
                         "capabilities": {
-                            "chat": True,
+                            "chat": kind == "chat",
                             "vision": bool(base_m.get("attachment")),
                             "tools": bool(base_m.get("tool_call")),
                         },
                     }
+                    ctx = (base_m.get("limit") or {}).get("context", 0)
+                    out_ = (base_m.get("limit") or {}).get("output", 0)
+                    if ctx > 0 or out_ > 0:  # 非 chat 模型可能无 limit（生图/TTS）
+                        e["limit"] = {"context": ctx, "output": out_}
                     if base_m.get("reasoning"):
                         e["reasoning"] = {"supported": True}
                     if model_efforts(base_m):
@@ -164,16 +179,18 @@ def main():
             elif k in entries:
                 merge_dict(entries[k], patch)
 
-    # 非对话模型（图像/音频等，无 context window）跳过 + 警告清单
-    skipped = [k for k, e in entries.items() if e["limit"]["context"] <= 0]
-    for k in skipped:
-        print(f"跳过（无 context，多为图像/音频模型）: {k}", file=sys.stderr)
-        del entries[k]
-    # 校验（不过全失败：上游结构异常宁可退出）
-    for e in entries.values():
-        if not e["id"] or e["limit"]["context"] <= 0:
-            print(f"校验失败: {e['id']}", file=sys.stderr)
+    # 校验分级：chat 模型必须有 context（缺失=上游数据异常，警告跳过）；
+    # image/audio/video 模型 context 可选（生图/TTS 无上下文窗口概念）。
+    skipped = []
+    for k, e in list(entries.items()):
+        if not e["id"]:
+            print(f"校验失败（空 id）: {k}", file=sys.stderr)
             sys.exit(1)
+        if e.get("kind") == "chat" and e.get("limit", {}).get("context", 0) <= 0:
+            print(f"跳过（chat 模型缺 context，上游数据异常）: {k}", file=sys.stderr)
+            skipped.append(k)
+            del entries[k]
+    # 非 chat 且无 limit 的条目正常保留（价格/能力仍有效）
 
     out = {
         "schema": "hb-models/v2",
@@ -184,7 +201,10 @@ def main():
         json.dump(out, f, indent=2, ensure_ascii=False)
         f.write("\n")
     n_ports = sum(len(e.get("ports", [])) for e in entries.values())
-    print(f"OK: {len(entries)} 模型 / {n_ports} 渠道 → models.json")
+    kinds = {}
+    for e in entries.values():
+        kinds[e.get("kind", "chat")] = kinds.get(e.get("kind", "chat"), 0) + 1
+    print(f"OK: {len(entries)} 模型 / {n_ports} 渠道 → models.json；类型分布: {kinds}")
 
 
 if __name__ == "__main__":

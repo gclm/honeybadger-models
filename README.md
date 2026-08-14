@@ -36,6 +36,7 @@ HoneyBadger 模型元数据注册表（`hb-models/v2`）。**models.json 由 syn
     {
       "id": "deepseek-v4-flash",
       "name": "DeepSeek V4 Flash",
+      "kind": "chat",
       "limit": { "context": 1000000, "output": 384000 },
       "reasoning": { "supported": true, "efforts": ["low", "high", "max"] },
       "capabilities": { "chat": true, "vision": false, "tools": true },
@@ -49,6 +50,7 @@ HoneyBadger 模型元数据注册表（`hb-models/v2`）。**models.json 由 syn
 ```
 
 - **条目主键 = 模型 id**（跨渠道唯一）；同名模型出现在多个被圈选 provider → 合并为一条，每 provider 一个 **port**（渠道价差异所在层）
+- **kind 类型**（从 `modalities.output` 推导，特定优先 image > audio > video > 纯 text）：`chat` 对话模型 / `image` 生图 / `audio` TTS·语音 / `video` 生视频。非 chat 模型同样一等公民（网关计费/能力路由都要用），`limit` 可选（生图/TTS 无上下文窗口概念）；**校验分级：chat 缺 context 视为上游数据异常（警告跳过），非 chat 不要求**
 - **快照折叠**：同 provider 内 `xxx-20250929` / `xxx-0731` 型日期后缀，若去后缀存在同名模型 → 不产生结构，仅作为 alias 挂到该 port
 - **reasoning.efforts**：取 models.dev `reasoning_options` 的 `effort` 型 values（`none`/`null`/`default` 剔除）；`toggle` 型 = supported 无档位；跨渠道不一致取并集
 - **capabilities**：`vision` ← attachment、`tools` ← tool_call
