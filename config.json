@@ -2,42 +2,54 @@
   "source": "https://models.dev/api.json",
   "provider_filter": {
     "openai": {
-      "channel": "openai"
+      "channel": "openai",
+      "native": ["gpt-*", "chatgpt-*", "o*", "text-embedding-*"]
     },
     "anthropic": {
-      "channel": "anthropic"
+      "channel": "anthropic",
+      "native": ["claude*"]
     },
     "google": {
-      "channel": "google"
+      "channel": "google",
+      "native": ["gemini*", "gemma*", "veo*", "lyria*", "deep-research*", "imagen*", "nano-banana*"]
     },
     "deepseek": {
-      "channel": "deepseek"
+      "channel": "deepseek",
+      "native": ["deepseek*"]
     },
     "xai": {
-      "channel": "xai"
+      "channel": "xai",
+      "native": ["grok*"]
     },
     "alibaba": {
-      "channel": "alibaba"
+      "channel": "alibaba",
+      "native": ["qwen*", "qwq*", "qvq*"]
     },
     "zai": {
-      "channel": "zhipuai"
+      "channel": "zhipuai",
+      "native": ["glm*"]
     },
     "minimax": {
       "channel": "minimax",
       "key_prefix": "minimax/",
-      "action": "both"
+      "action": "both",
+      "native": ["MiniMax*"]
     },
     "moonshotai": {
-      "channel": "moonshot"
+      "channel": "moonshot",
+      "native": ["kimi*"]
     },
     "xiaomi": {
-      "channel": "xiaomi"
+      "channel": "xiaomi",
+      "native": ["mimo-*"]
     },
     "stepfun": {
-      "channel": "stepfun"
+      "channel": "stepfun",
+      "native": ["step*"]
     },
     "v0": {
-      "channel": "v0"
+      "channel": "v0",
+      "native": ["v0-*"]
     }
   }
 }
