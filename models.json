@@ -1,6 +1,6 @@
 {
   "schema": "honeybadger-models/v1",
-  "updated_at": "2026-08-16",
+  "updated_at": "2026-08-17",
   "models": [
     {
       "id": "MiniMax-M2",
@@ -2936,6 +2936,20 @@
     {
       "id": "grok-imagine-image",
       "name": "Grok Imagine Image",
+      "kind": "image",
+      "channel": "xai",
+      "capabilities": {
+        "vision": true,
+        "tools": false
+      },
+      "limit": {
+        "context": 8000,
+        "output": 0
+      }
+    },
+    {
+      "id": "grok-imagine-image-2.0",
+      "name": "Grok Imagine Image 2.0",
       "kind": "image",
       "channel": "xai",
       "capabilities": {
