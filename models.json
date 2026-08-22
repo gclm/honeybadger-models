@@ -1,6 +1,6 @@
 {
   "schema": "honeybadger-models/v1",
-  "updated_at": "2026-08-21",
+  "updated_at": "2026-08-22",
   "models": [
     {
       "id": "MiniMax-M2",
@@ -614,6 +614,36 @@
       "channel": "deepseek",
       "capabilities": {
         "vision": false,
+        "tools": true,
+        "reasoning": {
+          "supported": true,
+          "efforts": [
+            "low",
+            "high",
+            "max"
+          ]
+        }
+      },
+      "limit": {
+        "context": 1000000,
+        "output": 384000
+      },
+      "price": {
+        "currency": "USD",
+        "unit": "per_million_tokens",
+        "input": 0.14,
+        "output": 0.28,
+        "cache_read": 0.0028,
+        "reasoning": 0.28
+      }
+    },
+    {
+      "id": "deepseek-v4-flash-vision-exp",
+      "name": "DeepSeek V4 Flash Vision Exp",
+      "kind": "chat",
+      "channel": "deepseek",
+      "capabilities": {
+        "vision": true,
         "tools": true,
         "reasoning": {
           "supported": true,
@@ -1261,9 +1291,9 @@
       "price": {
         "currency": "USD",
         "unit": "per_million_tokens",
-        "input": 1.5,
-        "output": 7.5,
-        "cache_read": 0.15
+        "input": 0.75,
+        "output": 3.75,
+        "cache_read": 0.075
       }
     },
     {
@@ -1346,7 +1376,6 @@
         "reasoning": {
           "supported": true,
           "efforts": [
-            "minimal",
             "low",
             "medium",
             "high"
@@ -1360,9 +1389,9 @@
       "price": {
         "currency": "USD",
         "unit": "per_million_tokens",
-        "input": 1.5,
-        "output": 9,
-        "cache_read": 0.15
+        "input": 0.75,
+        "output": 3.75,
+        "cache_read": 0.075
       }
     },
     {
@@ -1390,9 +1419,9 @@
       "price": {
         "currency": "USD",
         "unit": "per_million_tokens",
-        "input": 0.25,
-        "output": 1.5,
-        "cache_read": 0.025
+        "input": 0.3,
+        "output": 2.5,
+        "cache_read": 0.03
       }
     },
     {
