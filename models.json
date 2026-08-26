@@ -1,6 +1,6 @@
 {
   "schema": "honeybadger-models/v1",
-  "updated_at": "2026-08-25",
+  "updated_at": "2026-08-26",
   "models": [
     {
       "id": "MiniMax-M2",
@@ -559,52 +559,6 @@
         "input": 2,
         "output": 12,
         "cache_read": 0.2
-      }
-    },
-    {
-      "id": "deepseek-chat",
-      "name": "DeepSeek Chat",
-      "kind": "chat",
-      "channel": "deepseek",
-      "capabilities": {
-        "vision": true,
-        "tools": true
-      },
-      "limit": {
-        "context": 1000000,
-        "output": 384000
-      },
-      "price": {
-        "currency": "USD",
-        "unit": "per_million_tokens",
-        "input": 0.14,
-        "output": 0.28,
-        "cache_read": 0.0028
-      }
-    },
-    {
-      "id": "deepseek-reasoner",
-      "name": "DeepSeek Reasoner",
-      "kind": "chat",
-      "channel": "deepseek",
-      "capabilities": {
-        "vision": true,
-        "tools": true,
-        "reasoning": {
-          "supported": true
-        }
-      },
-      "limit": {
-        "context": 1000000,
-        "output": 384000
-      },
-      "price": {
-        "currency": "USD",
-        "unit": "per_million_tokens",
-        "input": 0.14,
-        "output": 0.28,
-        "cache_read": 0.0028,
-        "reasoning": 0.28
       }
     },
     {
@@ -1830,6 +1784,36 @@
       }
     },
     {
+      "id": "glm-5.3",
+      "name": "GLM-5.3",
+      "kind": "chat",
+      "channel": "zhipuai",
+      "capabilities": {
+        "vision": false,
+        "tools": true,
+        "reasoning": {
+          "supported": true,
+          "efforts": [
+            "low",
+            "high",
+            "max"
+          ]
+        }
+      },
+      "limit": {
+        "context": 1000000,
+        "output": 131072
+      },
+      "price": {
+        "currency": "USD",
+        "unit": "per_million_tokens",
+        "input": 1.4,
+        "output": 4.4,
+        "cache_read": 0.26,
+        "cache_write": 0
+      }
+    },
+    {
       "id": "glm-5v-turbo",
       "name": "GLM-5V-Turbo",
       "kind": "chat",
@@ -2595,10 +2579,10 @@
       "price": {
         "currency": "USD",
         "unit": "per_million_tokens",
-        "input": 5,
-        "output": 30,
-        "cache_read": 0.5,
-        "cache_write": 6.25
+        "input": 4,
+        "output": 20,
+        "cache_read": 0.4,
+        "cache_write": 5
       }
     },
     {
@@ -2659,10 +2643,10 @@
       "price": {
         "currency": "USD",
         "unit": "per_million_tokens",
-        "input": 5,
-        "output": 30,
-        "cache_read": 0.5,
-        "cache_write": 6.25
+        "input": 4,
+        "output": 20,
+        "cache_read": 0.4,
+        "cache_write": 5
       }
     },
     {
