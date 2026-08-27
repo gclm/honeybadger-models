@@ -1,6 +1,6 @@
 {
   "schema": "honeybadger-models/v1",
-  "updated_at": "2026-08-26",
+  "updated_at": "2026-08-27",
   "models": [
     {
       "id": "MiniMax-M2",
@@ -15,8 +15,8 @@
         }
       },
       "limit": {
-        "context": 196608,
-        "output": 128000
+        "context": 204800,
+        "output": 131072
       },
       "price": {
         "currency": "USD",
@@ -181,8 +181,8 @@
         }
       },
       "limit": {
-        "context": 1000000,
-        "output": 128000
+        "context": 1048576,
+        "output": 512000
       },
       "price": {
         "currency": "USD",
@@ -1810,6 +1810,36 @@
         "input": 1.4,
         "output": 4.4,
         "cache_read": 0.26,
+        "cache_write": 0
+      }
+    },
+    {
+      "id": "glm-5.3-flash",
+      "name": "GLM-5.3-Flash",
+      "kind": "chat",
+      "channel": "zhipuai",
+      "capabilities": {
+        "vision": true,
+        "tools": true,
+        "reasoning": {
+          "supported": true,
+          "efforts": [
+            "low",
+            "high",
+            "max"
+          ]
+        }
+      },
+      "limit": {
+        "context": 1000000,
+        "output": 131072
+      },
+      "price": {
+        "currency": "USD",
+        "unit": "per_million_tokens",
+        "input": 0.075,
+        "output": 0.25,
+        "cache_read": 0.015,
         "cache_write": 0
       }
     },
