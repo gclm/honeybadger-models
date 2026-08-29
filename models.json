@@ -1,6 +1,6 @@
 {
   "schema": "honeybadger-models/v1",
-  "updated_at": "2026-08-28",
+  "updated_at": "2026-08-29",
   "models": [
     {
       "id": "MiniMax-M2",
@@ -4730,6 +4730,36 @@
         "output": 3,
         "cache_read": 0.05,
         "cache_write": 0.625
+      }
+    },
+    {
+      "id": "qwen3.8-flash",
+      "name": "Qwen3.8 Flash",
+      "kind": "chat",
+      "channel": "alibaba",
+      "capabilities": {
+        "vision": true,
+        "tools": true,
+        "reasoning": {
+          "supported": true,
+          "efforts": [
+            "low",
+            "medium",
+            "xhigh"
+          ]
+        }
+      },
+      "limit": {
+        "context": 1000000,
+        "output": 131072
+      },
+      "price": {
+        "currency": "USD",
+        "unit": "per_million_tokens",
+        "input": 0.15,
+        "output": 0.47,
+        "cache_read": 0.016,
+        "cache_write": 0.2
       }
     },
     {
