@@ -1,6 +1,6 @@
 {
   "schema": "honeybadger-models/v1",
-  "updated_at": "2026-08-31",
+  "updated_at": "2026-09-01",
   "models": [
     {
       "id": "MiniMax-M2",
@@ -1399,29 +1399,6 @@
         "unit": "per_million_tokens",
         "input": 1.5,
         "output": 17.5
-      }
-    },
-    {
-      "id": "gemini-robotics-er-1.6-preview",
-      "name": "Gemini Robotics-ER 1.6 Preview",
-      "kind": "chat",
-      "channel": "google",
-      "capabilities": {
-        "vision": true,
-        "tools": true,
-        "reasoning": {
-          "supported": true
-        }
-      },
-      "limit": {
-        "context": 131072,
-        "output": 65536
-      },
-      "price": {
-        "currency": "USD",
-        "unit": "per_million_tokens",
-        "input": 1,
-        "output": 5
       }
     },
     {
@@ -3163,7 +3140,7 @@
       "kind": "chat",
       "channel": "moonshot",
       "capabilities": {
-        "vision": false,
+        "vision": true,
         "tools": true,
         "reasoning": {
           "supported": true
