@@ -1,6 +1,6 @@
 {
   "schema": "honeybadger-models/v1",
-  "updated_at": "2026-09-01",
+  "updated_at": "2026-09-02",
   "models": [
     {
       "id": "MiniMax-M2",
@@ -234,6 +234,38 @@
         "input": 10,
         "output": 50,
         "cache_read": 1,
+        "cache_write": 12.5
+      }
+    },
+    {
+      "id": "claude-fable-5-1",
+      "name": "Claude Fable 5.1",
+      "kind": "chat",
+      "channel": "anthropic",
+      "capabilities": {
+        "vision": true,
+        "tools": true,
+        "reasoning": {
+          "supported": true,
+          "efforts": [
+            "low",
+            "medium",
+            "high",
+            "xhigh",
+            "max"
+          ]
+        }
+      },
+      "limit": {
+        "context": 1000000,
+        "output": 128000
+      },
+      "price": {
+        "currency": "USD",
+        "unit": "per_million_tokens",
+        "input": 10,
+        "output": 50,
+        "cache_read": 0.25,
         "cache_write": 12.5
       }
     },
