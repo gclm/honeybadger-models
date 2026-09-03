@@ -1,6 +1,6 @@
 {
   "schema": "honeybadger-models/v1",
-  "updated_at": "2026-09-02",
+  "updated_at": "2026-09-03",
   "models": [
     {
       "id": "MiniMax-M2",
@@ -1285,6 +1285,35 @@
     {
       "id": "gemini-3.7-flash",
       "name": "Gemini 3.7 Flash",
+      "kind": "chat",
+      "channel": "google",
+      "capabilities": {
+        "vision": true,
+        "tools": true,
+        "reasoning": {
+          "supported": true,
+          "efforts": [
+            "low",
+            "medium",
+            "high"
+          ]
+        }
+      },
+      "limit": {
+        "context": 1048576,
+        "output": 65536
+      },
+      "price": {
+        "currency": "USD",
+        "unit": "per_million_tokens",
+        "input": 0.75,
+        "output": 3.75,
+        "cache_read": 0.075
+      }
+    },
+    {
+      "id": "gemini-3.8-flash",
+      "name": "Gemini 3.8 Flash",
       "kind": "chat",
       "channel": "google",
       "capabilities": {
