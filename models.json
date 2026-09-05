@@ -1,6 +1,6 @@
 {
   "schema": "honeybadger-models/v1",
-  "updated_at": "2026-09-04",
+  "updated_at": "2026-09-05",
   "models": [
     {
       "id": "MiniMax-M2",
@@ -2750,6 +2750,38 @@
       }
     },
     {
+      "id": "gpt-6-astra",
+      "name": "GPT-6 Astra",
+      "kind": "chat",
+      "channel": "openai",
+      "capabilities": {
+        "vision": true,
+        "tools": true,
+        "reasoning": {
+          "supported": true,
+          "efforts": [
+            "low",
+            "medium",
+            "high",
+            "xhigh",
+            "max"
+          ]
+        }
+      },
+      "limit": {
+        "context": 1050000,
+        "output": 128000
+      },
+      "price": {
+        "currency": "USD",
+        "unit": "per_million_tokens",
+        "input": 10,
+        "output": 50,
+        "cache_read": 1,
+        "cache_write": 12.5
+      }
+    },
+    {
       "id": "gpt-image-1",
       "name": "gpt-image-1",
       "kind": "image",
@@ -3024,7 +3056,7 @@
         "tools": false
       },
       "limit": {
-        "context": 8000,
+        "context": 16000,
         "output": 0
       }
     },
@@ -3038,7 +3070,7 @@
         "tools": false
       },
       "limit": {
-        "context": 8000,
+        "context": 64000,
         "output": 0
       }
     },
@@ -3052,7 +3084,7 @@
         "tools": false
       },
       "limit": {
-        "context": 8000,
+        "context": 16000,
         "output": 0
       }
     },
@@ -4921,10 +4953,7 @@
         "input": 0.1,
         "output": 0.3,
         "cache_read": 0.02
-      },
-      "aliases": [
-        "step-3.5-flash-2603"
-      ]
+      }
     },
     {
       "id": "step-3.7-flash",
