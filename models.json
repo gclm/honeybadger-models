@@ -1,6 +1,6 @@
 {
   "schema": "honeybadger-models/v1",
-  "updated_at": "2026-09-10",
+  "updated_at": "2026-09-11",
   "models": [
     {
       "id": "MiniMax-M2",
@@ -594,12 +594,12 @@
       }
     },
     {
-      "id": "deepseek-v4-flash",
-      "name": "DeepSeek V4 Flash",
+      "id": "deepseek-flash",
+      "name": "DeepSeek V4.1 Flash",
       "kind": "chat",
       "channel": "deepseek",
       "capabilities": {
-        "vision": false,
+        "vision": true,
         "tools": true,
         "reasoning": {
           "supported": true,
@@ -617,10 +617,40 @@
       "price": {
         "currency": "USD",
         "unit": "per_million_tokens",
-        "input": 0.14,
-        "output": 0.28,
-        "cache_read": 0.0028,
-        "reasoning": 0.28
+        "input": 0.15,
+        "output": 0.6,
+        "cache_read": 0.003,
+        "reasoning": 0.6
+      }
+    },
+    {
+      "id": "deepseek-v4-flash",
+      "name": "DeepSeek V4 Flash",
+      "kind": "chat",
+      "channel": "deepseek",
+      "capabilities": {
+        "vision": true,
+        "tools": true,
+        "reasoning": {
+          "supported": true,
+          "efforts": [
+            "low",
+            "high",
+            "max"
+          ]
+        }
+      },
+      "limit": {
+        "context": 1000000,
+        "output": 384000
+      },
+      "price": {
+        "currency": "USD",
+        "unit": "per_million_tokens",
+        "input": 0.15,
+        "output": 0.6,
+        "cache_read": 0.003,
+        "reasoning": 0.6
       }
     },
     {
@@ -647,10 +677,10 @@
       "price": {
         "currency": "USD",
         "unit": "per_million_tokens",
-        "input": 0.14,
-        "output": 0.28,
-        "cache_read": 0.0028,
-        "reasoning": 0.28
+        "input": 0.15,
+        "output": 0.6,
+        "cache_read": 0.003,
+        "reasoning": 0.6
       }
     },
     {
