@@ -1,6 +1,6 @@
 {
   "schema": "honeybadger-models/v1",
-  "updated_at": "2026-09-18",
+  "updated_at": "2026-09-19",
   "models": [
     {
       "id": "MiniMax-M2",
@@ -1905,9 +1905,39 @@
       "price": {
         "currency": "USD",
         "unit": "per_million_tokens",
-        "input": 0.075,
-        "output": 0.25,
-        "cache_read": 0.015,
+        "input": 0.15,
+        "output": 0.5,
+        "cache_read": 0.03,
+        "cache_write": 0
+      }
+    },
+    {
+      "id": "glm-5.3-flashx",
+      "name": "GLM-5.3-FlashX",
+      "kind": "chat",
+      "channel": "zhipuai",
+      "capabilities": {
+        "vision": true,
+        "tools": true,
+        "reasoning": {
+          "supported": true,
+          "efforts": [
+            "low",
+            "high",
+            "max"
+          ]
+        }
+      },
+      "limit": {
+        "context": 1000000,
+        "output": 131072
+      },
+      "price": {
+        "currency": "USD",
+        "unit": "per_million_tokens",
+        "input": 0.37,
+        "output": 1.25,
+        "cache_read": 0.075,
         "cache_write": 0
       }
     },
