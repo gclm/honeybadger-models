@@ -1,6 +1,6 @@
 {
   "schema": "honeybadger-models/v1",
-  "updated_at": "2026-09-21",
+  "updated_at": "2026-09-22",
   "models": [
     {
       "id": "MiniMax-M2",
@@ -694,6 +694,7 @@
         "reasoning": {
           "supported": true,
           "efforts": [
+            "low",
             "high",
             "max"
           ]
@@ -1670,6 +1671,31 @@
         "unit": "per_million_tokens",
         "input": 0.3,
         "output": 0.9
+      }
+    },
+    {
+      "id": "glm-4.6v-flash",
+      "name": "GLM-4.6V-Flash",
+      "kind": "chat",
+      "channel": "zhipuai",
+      "capabilities": {
+        "vision": true,
+        "tools": true,
+        "reasoning": {
+          "supported": true
+        }
+      },
+      "limit": {
+        "context": 128000,
+        "output": 32768
+      },
+      "price": {
+        "currency": "USD",
+        "unit": "per_million_tokens",
+        "input": 0,
+        "output": 0,
+        "cache_read": 0,
+        "cache_write": 0
       }
     },
     {
@@ -3083,6 +3109,36 @@
       }
     },
     {
+      "id": "grok-4.7",
+      "name": "Grok 4.7",
+      "kind": "chat",
+      "channel": "xai",
+      "capabilities": {
+        "vision": true,
+        "tools": true,
+        "reasoning": {
+          "supported": true,
+          "efforts": [
+            "low",
+            "medium",
+            "high",
+            "xhigh"
+          ]
+        }
+      },
+      "limit": {
+        "context": 500000,
+        "output": 500000
+      },
+      "price": {
+        "currency": "USD",
+        "unit": "per_million_tokens",
+        "input": 2,
+        "output": 6,
+        "cache_read": 0.5
+      }
+    },
+    {
       "id": "grok-build-0.1",
       "name": "Grok Build 0.1",
       "kind": "chat",
@@ -3109,6 +3165,20 @@
     {
       "id": "grok-imagine-image",
       "name": "Grok Imagine Image",
+      "kind": "image",
+      "channel": "xai",
+      "capabilities": {
+        "vision": true,
+        "tools": false
+      },
+      "limit": {
+        "context": 16000,
+        "output": 0
+      }
+    },
+    {
+      "id": "grok-imagine-image-quality",
+      "name": "Grok Imagine Image Quality",
       "kind": "image",
       "channel": "xai",
       "capabilities": {
@@ -3431,6 +3501,78 @@
         "input": 1.305,
         "output": 2.61,
         "cache_read": 0.0108
+      }
+    },
+    {
+      "id": "mimo-v2.6-flash",
+      "name": "MiMo-V2.6-Flash",
+      "kind": "chat",
+      "channel": "xiaomi",
+      "capabilities": {
+        "vision": true,
+        "tools": true,
+        "reasoning": {
+          "supported": true
+        }
+      },
+      "limit": {
+        "context": 1048576,
+        "output": 131072
+      },
+      "price": {
+        "currency": "USD",
+        "unit": "per_million_tokens",
+        "input": 0.14,
+        "output": 0.28,
+        "cache_read": 0.0028
+      }
+    },
+    {
+      "id": "mimo-v2.6-pro",
+      "name": "MiMo-V2.6-Pro",
+      "kind": "chat",
+      "channel": "xiaomi",
+      "capabilities": {
+        "vision": true,
+        "tools": true,
+        "reasoning": {
+          "supported": true
+        }
+      },
+      "limit": {
+        "context": 1048576,
+        "output": 131072
+      },
+      "price": {
+        "currency": "USD",
+        "unit": "per_million_tokens",
+        "input": 0.435,
+        "output": 0.87,
+        "cache_read": 0.0036
+      }
+    },
+    {
+      "id": "mimo-v2.6-pro-ultraspeed",
+      "name": "MiMo-V2.6-Pro-UltraSpeed",
+      "kind": "chat",
+      "channel": "xiaomi",
+      "capabilities": {
+        "vision": true,
+        "tools": true,
+        "reasoning": {
+          "supported": true
+        }
+      },
+      "limit": {
+        "context": 1048576,
+        "output": 131072
+      },
+      "price": {
+        "currency": "USD",
+        "unit": "per_million_tokens",
+        "input": 4.35,
+        "output": 8.7,
+        "cache_read": 0.036
       }
     },
     {
