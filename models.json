@@ -1,6 +1,6 @@
 {
   "schema": "honeybadger-models/v1",
-  "updated_at": "2026-09-27",
+  "updated_at": "2026-09-28",
   "models": [
     {
       "id": "MiniMax-M2",
@@ -193,6 +193,41 @@
       },
       "aliases": [
         "minimax/MiniMax-M3"
+      ]
+    },
+    {
+      "id": "MiniMax-M3.1-Flash-Preview",
+      "name": "MiniMax-M3.1-Flash-Preview",
+      "kind": "chat",
+      "channel": "minimax-cn-coding-plan",
+      "capabilities": {
+        "vision": true,
+        "tools": true,
+        "reasoning": {
+          "supported": true,
+          "efforts": [
+            "low",
+            "medium",
+            "high",
+            "xhigh",
+            "max"
+          ]
+        }
+      },
+      "limit": {
+        "context": 1000000,
+        "output": 512000
+      },
+      "price": {
+        "currency": "USD",
+        "unit": "per_million_tokens",
+        "input": 0,
+        "output": 0,
+        "cache_read": 0,
+        "cache_write": 0
+      },
+      "aliases": [
+        "minimax/MiniMax-M3.1-Flash-Preview"
       ]
     },
     {
@@ -2958,6 +2993,70 @@
       }
     },
     {
+      "id": "gpt-daybreak-blue-latest",
+      "name": "Daybreak Blue",
+      "kind": "chat",
+      "channel": "openai",
+      "capabilities": {
+        "vision": true,
+        "tools": true,
+        "reasoning": {
+          "supported": true,
+          "efforts": [
+            "low",
+            "medium",
+            "high",
+            "xhigh",
+            "max"
+          ]
+        }
+      },
+      "limit": {
+        "context": 1050000,
+        "output": 128000
+      },
+      "price": {
+        "currency": "USD",
+        "unit": "per_million_tokens",
+        "input": 4,
+        "output": 20,
+        "cache_read": 0.4,
+        "cache_write": 5
+      }
+    },
+    {
+      "id": "gpt-daybreak-red-latest",
+      "name": "Daybreak Red",
+      "kind": "chat",
+      "channel": "openai",
+      "capabilities": {
+        "vision": true,
+        "tools": true,
+        "reasoning": {
+          "supported": true,
+          "efforts": [
+            "low",
+            "medium",
+            "high",
+            "xhigh",
+            "max"
+          ]
+        }
+      },
+      "limit": {
+        "context": 400000,
+        "output": 128000
+      },
+      "price": {
+        "currency": "USD",
+        "unit": "per_million_tokens",
+        "input": 12.5,
+        "output": 75,
+        "cache_read": 1.25,
+        "cache_write": 15.625
+      }
+    },
+    {
       "id": "gpt-image-1",
       "name": "gpt-image-1",
       "kind": "image",
@@ -4738,6 +4837,31 @@
       }
     },
     {
+      "id": "qwen3.5-flash",
+      "name": "Qwen3.5 Flash",
+      "kind": "chat",
+      "channel": "alibaba",
+      "capabilities": {
+        "vision": true,
+        "tools": true,
+        "reasoning": {
+          "supported": true
+        }
+      },
+      "limit": {
+        "context": 1000000,
+        "output": 65536
+      },
+      "price": {
+        "currency": "USD",
+        "unit": "per_million_tokens",
+        "input": 0.1,
+        "output": 0.4,
+        "cache_read": 0.01,
+        "cache_write": 0.125
+      }
+    },
+    {
       "id": "qwen3.5-plus",
       "name": "Qwen3.5 Plus",
       "kind": "chat",
@@ -4882,6 +5006,31 @@
       }
     },
     {
+      "id": "qwen3.7-flash",
+      "name": "Qwen3.7 Flash",
+      "kind": "chat",
+      "channel": "alibaba",
+      "capabilities": {
+        "vision": true,
+        "tools": true,
+        "reasoning": {
+          "supported": true
+        }
+      },
+      "limit": {
+        "context": 1000000,
+        "output": 131072
+      },
+      "price": {
+        "currency": "USD",
+        "unit": "per_million_tokens",
+        "input": 0.03,
+        "output": 0.13,
+        "cache_read": 0.003,
+        "cache_write": 0.0375
+      }
+    },
+    {
       "id": "qwen3.7-max",
       "name": "Qwen3.7 Max",
       "kind": "chat",
@@ -4912,7 +5061,7 @@
       "kind": "chat",
       "channel": "alibaba",
       "capabilities": {
-        "vision": false,
+        "vision": true,
         "tools": true,
         "reasoning": {
           "supported": true
@@ -4925,10 +5074,10 @@
       "price": {
         "currency": "USD",
         "unit": "per_million_tokens",
-        "input": 0.5,
-        "output": 3,
-        "cache_read": 0.05,
-        "cache_write": 0.625
+        "input": 0.4,
+        "output": 1.6,
+        "cache_read": 0.04,
+        "cache_write": 0.5
       }
     },
     {
@@ -4989,6 +5138,35 @@
         "output": 6,
         "cache_read": 0.25,
         "cache_write": 2.5
+      }
+    },
+    {
+      "id": "qwen3.8-omni-flash",
+      "name": "Qwen3.8 Omni Flash",
+      "kind": "chat",
+      "channel": "alibaba",
+      "capabilities": {
+        "vision": true,
+        "tools": true,
+        "reasoning": {
+          "supported": true,
+          "efforts": [
+            "low",
+            "medium",
+            "xhigh"
+          ]
+        }
+      },
+      "limit": {
+        "context": 1000000,
+        "output": 131072
+      },
+      "price": {
+        "currency": "USD",
+        "unit": "per_million_tokens",
+        "input": 0.15,
+        "output": 0.47,
+        "cache_read": 0.016
       }
     },
     {
