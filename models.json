@@ -1,6 +1,6 @@
 {
   "schema": "honeybadger-models/v1",
-  "updated_at": "2026-09-28",
+  "updated_at": "2026-09-29",
   "models": [
     {
       "id": "MiniMax-M2",
@@ -577,6 +577,38 @@
     {
       "id": "claude-sonnet-5",
       "name": "Claude Sonnet 5",
+      "kind": "chat",
+      "channel": "anthropic",
+      "capabilities": {
+        "vision": true,
+        "tools": true,
+        "reasoning": {
+          "supported": true,
+          "efforts": [
+            "low",
+            "medium",
+            "high",
+            "xhigh",
+            "max"
+          ]
+        }
+      },
+      "limit": {
+        "context": 1000000,
+        "output": 128000
+      },
+      "price": {
+        "currency": "USD",
+        "unit": "per_million_tokens",
+        "input": 2,
+        "output": 10,
+        "cache_read": 0.2,
+        "cache_write": 2.5
+      }
+    },
+    {
+      "id": "claude-sonnet-5-5",
+      "name": "Claude Sonnet 5.5",
       "kind": "chat",
       "channel": "anthropic",
       "capabilities": {
