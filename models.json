@@ -1,6 +1,6 @@
 {
   "schema": "honeybadger-models/v1",
-  "updated_at": "2026-09-29",
+  "updated_at": "2026-09-30",
   "models": [
     {
       "id": "MiniMax-M2",
@@ -3021,6 +3021,38 @@
         "input": 2,
         "output": 10,
         "cache_read": 0.2,
+        "cache_write": 2.5
+      }
+    },
+    {
+      "id": "gpt-6.1-sol",
+      "name": "GPT-6.1 Sol",
+      "kind": "chat",
+      "channel": "openai",
+      "capabilities": {
+        "vision": true,
+        "tools": true,
+        "reasoning": {
+          "supported": true,
+          "efforts": [
+            "low",
+            "medium",
+            "high",
+            "xhigh",
+            "max"
+          ]
+        }
+      },
+      "limit": {
+        "context": 1050000,
+        "output": 128000
+      },
+      "price": {
+        "currency": "USD",
+        "unit": "per_million_tokens",
+        "input": 2,
+        "output": 10,
+        "cache_read": 0.1,
         "cache_write": 2.5
       }
     },
