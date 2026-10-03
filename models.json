@@ -1,6 +1,6 @@
 {
   "schema": "honeybadger-models/v1",
-  "updated_at": "2026-10-02",
+  "updated_at": "2026-10-03",
   "models": [
     {
       "id": "MiniMax-M2",
@@ -800,10 +800,10 @@
       "price": {
         "currency": "USD",
         "unit": "per_million_tokens",
-        "input": 0.435,
-        "output": 0.87,
-        "cache_read": 0.003625,
-        "reasoning": 0.87
+        "input": 0.66,
+        "output": 1.98,
+        "cache_read": 0.022,
+        "reasoning": 1.98
       }
     },
     {
@@ -3460,6 +3460,20 @@
     {
       "id": "grok-imagine-video-1.5",
       "name": "Grok Imagine Video 1.5",
+      "kind": "video",
+      "channel": "xai",
+      "capabilities": {
+        "vision": true,
+        "tools": false
+      },
+      "limit": {
+        "context": 1024,
+        "output": 0
+      }
+    },
+    {
+      "id": "grok-imagine-video-1.5-lite",
+      "name": "Grok Imagine Video 1.5 Lite",
       "kind": "video",
       "channel": "xai",
       "capabilities": {
