@@ -1,6 +1,6 @@
 {
   "schema": "honeybadger-models/v1",
-  "updated_at": "2026-10-08",
+  "updated_at": "2026-10-09",
   "models": [
     {
       "id": "MiniMax-M2",
@@ -5512,75 +5512,6 @@
         "unit": "per_million_tokens",
         "input": 0.1,
         "output": 0
-      }
-    },
-    {
-      "id": "v0-1.0-md",
-      "name": "v0-1.0-md",
-      "kind": "chat",
-      "channel": "v0",
-      "capabilities": {
-        "vision": true,
-        "tools": true,
-        "reasoning": {
-          "supported": true
-        }
-      },
-      "limit": {
-        "context": 128000,
-        "output": 32000
-      },
-      "price": {
-        "currency": "USD",
-        "unit": "per_million_tokens",
-        "input": 3,
-        "output": 15
-      }
-    },
-    {
-      "id": "v0-1.5-lg",
-      "name": "v0-1.5-lg",
-      "kind": "chat",
-      "channel": "v0",
-      "capabilities": {
-        "vision": true,
-        "tools": true,
-        "reasoning": {
-          "supported": true
-        }
-      },
-      "limit": {
-        "context": 512000,
-        "output": 32000
-      },
-      "price": {
-        "currency": "USD",
-        "unit": "per_million_tokens",
-        "input": 15,
-        "output": 75
-      }
-    },
-    {
-      "id": "v0-1.5-md",
-      "name": "v0-1.5-md",
-      "kind": "chat",
-      "channel": "v0",
-      "capabilities": {
-        "vision": true,
-        "tools": true,
-        "reasoning": {
-          "supported": true
-        }
-      },
-      "limit": {
-        "context": 128000,
-        "output": 32000
-      },
-      "price": {
-        "currency": "USD",
-        "unit": "per_million_tokens",
-        "input": 3,
-        "output": 15
       }
     },
     {
