@@ -1,6 +1,6 @@
 {
   "schema": "honeybadger-models/v1",
-  "updated_at": "2026-10-13",
+  "updated_at": "2026-10-14",
   "models": [
     {
       "id": "MiniMax-M2",
@@ -1494,6 +1494,35 @@
         "input": 0.75,
         "output": 3.75,
         "cache_read": 0.075
+      }
+    },
+    {
+      "id": "gemini-4-argon",
+      "name": "Gemini 4 Argon",
+      "kind": "chat",
+      "channel": "google",
+      "capabilities": {
+        "vision": true,
+        "tools": true,
+        "reasoning": {
+          "supported": true,
+          "efforts": [
+            "low",
+            "medium",
+            "high"
+          ]
+        }
+      },
+      "limit": {
+        "context": 1048576,
+        "output": 32768
+      },
+      "price": {
+        "currency": "USD",
+        "unit": "per_million_tokens",
+        "input": 2,
+        "output": 10,
+        "cache_read": 0.1
       }
     },
     {
