@@ -1,6 +1,6 @@
 {
   "schema": "honeybadger-models/v1",
-  "updated_at": "2026-10-17",
+  "updated_at": "2026-10-18",
   "models": [
     {
       "id": "MiniMax-M2",
@@ -720,7 +720,7 @@
     },
     {
       "id": "deepseek-flash",
-      "name": "DeepSeek V4.1 Flash",
+      "name": "DeepSeek V4.1 Flash 1017",
       "kind": "chat",
       "channel": "deepseek",
       "capabilities": {
@@ -1776,7 +1776,8 @@
         "currency": "USD",
         "unit": "per_million_tokens",
         "input": 0.6,
-        "output": 1.8
+        "output": 1.8,
+        "cache_read": 0.11
       }
     },
     {
@@ -1824,7 +1825,8 @@
         "currency": "USD",
         "unit": "per_million_tokens",
         "input": 0.3,
-        "output": 0.9
+        "output": 0.9,
+        "cache_read": 0.05
       }
     },
     {
