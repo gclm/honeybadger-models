@@ -1,6 +1,6 @@
 {
   "schema": "honeybadger-models/v1",
-  "updated_at": "2026-10-23",
+  "updated_at": "2026-10-24",
   "models": [
     {
       "id": "MiniMax-M2",
@@ -361,7 +361,10 @@
         "output": 5,
         "cache_read": 0.1,
         "cache_write": 1.25
-      }
+      },
+      "aliases": [
+        "claude-haiku-4-5-20251001"
+      ]
     },
     {
       "id": "claude-haiku-5-5",
@@ -607,7 +610,10 @@
         "output": 15,
         "cache_read": 0.3,
         "cache_write": 3.75
-      }
+      },
+      "aliases": [
+        "claude-sonnet-4-5-20250929"
+      ]
     },
     {
       "id": "claude-sonnet-4-6",
@@ -3667,6 +3673,66 @@
       }
     },
     {
+      "id": "kimi-k3.1-pro",
+      "name": "Kimi K3.1 Pro",
+      "kind": "chat",
+      "channel": "moonshot",
+      "capabilities": {
+        "vision": true,
+        "tools": true,
+        "reasoning": {
+          "supported": true,
+          "efforts": [
+            "low",
+            "high",
+            "max"
+          ]
+        }
+      },
+      "limit": {
+        "context": 1048576,
+        "output": 1048576
+      },
+      "price": {
+        "currency": "USD",
+        "unit": "per_million_tokens",
+        "input": 2,
+        "output": 10,
+        "cache_read": 0.2,
+        "cache_write": 2
+      }
+    },
+    {
+      "id": "kimi-k3.1-pro-highspeed",
+      "name": "Kimi K3.1 Pro Highspeed",
+      "kind": "chat",
+      "channel": "moonshot",
+      "capabilities": {
+        "vision": true,
+        "tools": true,
+        "reasoning": {
+          "supported": true,
+          "efforts": [
+            "low",
+            "high",
+            "max"
+          ]
+        }
+      },
+      "limit": {
+        "context": 1048576,
+        "output": 1048576
+      },
+      "price": {
+        "currency": "USD",
+        "unit": "per_million_tokens",
+        "input": 4,
+        "output": 20,
+        "cache_read": 0.2,
+        "cache_write": 4
+      }
+    },
+    {
       "id": "lyria-3-clip-preview",
       "name": "Lyria 3 Clip Preview",
       "kind": "audio",
@@ -5186,7 +5252,10 @@
         "input": 0.10461,
         "output": 0.31384,
         "cache_read": 0.02092
-      }
+      },
+      "aliases": [
+        "step-3.5-flash-2603"
+      ]
     },
     {
       "id": "step-3.7-flash",
