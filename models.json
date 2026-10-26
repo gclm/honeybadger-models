@@ -1,6 +1,6 @@
 {
   "schema": "honeybadger-models/v1",
-  "updated_at": "2026-10-25",
+  "updated_at": "2026-10-26",
   "models": [
     {
       "id": "MiniMax-M2",
@@ -361,7 +361,10 @@
         "output": 5,
         "cache_read": 0.1,
         "cache_write": 1.25
-      }
+      },
+      "aliases": [
+        "claude-haiku-4-5-20251001"
+      ]
     },
     {
       "id": "claude-haiku-5-5",
@@ -423,7 +426,10 @@
         "output": 25,
         "cache_read": 0.5,
         "cache_write": 6.25
-      }
+      },
+      "aliases": [
+        "claude-opus-4-5-20251101"
+      ]
     },
     {
       "id": "claude-opus-4-6",
@@ -5246,7 +5252,10 @@
         "input": 0.10461,
         "output": 0.31384,
         "cache_read": 0.02092
-      }
+      },
+      "aliases": [
+        "step-3.5-flash-2603"
+      ]
     },
     {
       "id": "step-3.7-flash",
