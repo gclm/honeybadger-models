@@ -1,6 +1,6 @@
 {
   "schema": "honeybadger-models/v1",
-  "updated_at": "2026-10-28",
+  "updated_at": "2026-10-29",
   "models": [
     {
       "id": "MiniMax-M2",
@@ -361,10 +361,7 @@
         "output": 5,
         "cache_read": 0.1,
         "cache_write": 1.25
-      },
-      "aliases": [
-        "claude-haiku-4-5-20251001"
-      ]
+      }
     },
     {
       "id": "claude-haiku-5-5",
@@ -426,10 +423,7 @@
         "output": 25,
         "cache_read": 0.5,
         "cache_write": 6.25
-      },
-      "aliases": [
-        "claude-opus-4-5-20251101"
-      ]
+      }
     },
     {
       "id": "claude-opus-4-6",
@@ -1095,29 +1089,6 @@
       }
     },
     {
-      "id": "gemini-3-pro-image-preview",
-      "name": "Nano Banana Pro",
-      "kind": "image",
-      "channel": "google",
-      "capabilities": {
-        "vision": true,
-        "tools": false,
-        "reasoning": {
-          "supported": true
-        }
-      },
-      "limit": {
-        "context": 131072,
-        "output": 32768
-      },
-      "price": {
-        "currency": "USD",
-        "unit": "per_million_tokens",
-        "input": 2,
-        "output": 120
-      }
-    },
-    {
       "id": "gemini-3.1-flash-image",
       "name": "Nano Banana 2",
       "kind": "image",
@@ -1136,33 +1107,6 @@
       "limit": {
         "context": 131072,
         "output": 32768
-      },
-      "price": {
-        "currency": "USD",
-        "unit": "per_million_tokens",
-        "input": 0.5,
-        "output": 60
-      }
-    },
-    {
-      "id": "gemini-3.1-flash-image-preview",
-      "name": "Nano Banana 2",
-      "kind": "image",
-      "channel": "google",
-      "capabilities": {
-        "vision": true,
-        "tools": false,
-        "reasoning": {
-          "supported": true,
-          "efforts": [
-            "minimal",
-            "high"
-          ]
-        }
-      },
-      "limit": {
-        "context": 65536,
-        "output": 65536
       },
       "price": {
         "currency": "USD",
@@ -3236,16 +3180,6 @@
         "output": 75,
         "cache_read": 1.25,
         "cache_write": 15.625
-      }
-    },
-    {
-      "id": "gpt-image-1",
-      "name": "gpt-image-1",
-      "kind": "image",
-      "channel": "openai",
-      "capabilities": {
-        "vision": true,
-        "tools": false
       }
     },
     {
