@@ -1,6 +1,6 @@
 {
   "schema": "honeybadger-models/v1",
-  "updated_at": "2026-11-01",
+  "updated_at": "2026-11-02",
   "models": [
     {
       "id": "MiniMax-M2",
@@ -361,10 +361,7 @@
         "output": 5,
         "cache_read": 0.1,
         "cache_write": 1.25
-      },
-      "aliases": [
-        "claude-haiku-4-5-20251001"
-      ]
+      }
     },
     {
       "id": "claude-haiku-5-5",
