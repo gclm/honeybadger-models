@@ -1,6 +1,6 @@
 {
   "schema": "honeybadger-models/v1",
-  "updated_at": "2026-11-03",
+  "updated_at": "2026-11-04",
   "models": [
     {
       "id": "MiniMax-M2",
@@ -5213,10 +5213,7 @@
         "input": 0.10461,
         "output": 0.31384,
         "cache_read": 0.02092
-      },
-      "aliases": [
-        "step-3.5-flash-2603"
-      ]
+      }
     },
     {
       "id": "step-3.7-flash",
