@@ -1,6 +1,6 @@
 {
   "schema": "honeybadger-models/v1",
-  "updated_at": "2026-11-08",
+  "updated_at": "2026-11-09",
   "models": [
     {
       "id": "MiniMax-M2",
@@ -423,10 +423,7 @@
         "output": 25,
         "cache_read": 0.5,
         "cache_write": 6.25
-      },
-      "aliases": [
-        "claude-opus-4-5-20251101"
-      ]
+      }
     },
     {
       "id": "claude-opus-4-6",
@@ -610,10 +607,7 @@
         "output": 15,
         "cache_read": 0.3,
         "cache_write": 3.75
-      },
-      "aliases": [
-        "claude-sonnet-4-5-20250929"
-      ]
+      }
     },
     {
       "id": "claude-sonnet-4-6",
