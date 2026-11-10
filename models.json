@@ -1,6 +1,6 @@
 {
   "schema": "honeybadger-models/v1",
-  "updated_at": "2026-11-09",
+  "updated_at": "2026-11-10",
   "models": [
     {
       "id": "MiniMax-M2",
@@ -339,6 +339,38 @@
       }
     },
     {
+      "id": "claude-fable-5-2",
+      "name": "Claude Fable 5.2",
+      "kind": "chat",
+      "channel": "anthropic",
+      "capabilities": {
+        "vision": true,
+        "tools": true,
+        "reasoning": {
+          "supported": true,
+          "efforts": [
+            "low",
+            "medium",
+            "high",
+            "xhigh",
+            "max"
+          ]
+        }
+      },
+      "limit": {
+        "context": 1000000,
+        "output": 128000
+      },
+      "price": {
+        "currency": "USD",
+        "unit": "per_million_tokens",
+        "input": 8,
+        "output": 40,
+        "cache_read": 0.2,
+        "cache_write": 10
+      }
+    },
+    {
       "id": "claude-haiku-4-5",
       "name": "Claude Haiku 4.5 (latest)",
       "kind": "chat",
@@ -361,7 +393,10 @@
         "output": 5,
         "cache_read": 0.1,
         "cache_write": 1.25
-      }
+      },
+      "aliases": [
+        "claude-haiku-4-5-20251001"
+      ]
     },
     {
       "id": "claude-haiku-5-5",
@@ -717,7 +752,7 @@
         }
       },
       "limit": {
-        "context": 131072,
+        "context": 1048576,
         "output": 65536
       },
       "price": {
@@ -741,7 +776,7 @@
         }
       },
       "limit": {
-        "context": 131072,
+        "context": 1048576,
         "output": 65536
       },
       "price": {
@@ -5204,10 +5239,7 @@
         "input": 0.10461,
         "output": 0.31384,
         "cache_read": 0.02092
-      },
-      "aliases": [
-        "step-3.5-flash-2603"
-      ]
+      }
     },
     {
       "id": "step-3.7-flash",
