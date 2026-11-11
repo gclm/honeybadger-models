@@ -1,6 +1,6 @@
 {
   "schema": "honeybadger-models/v1",
-  "updated_at": "2026-11-10",
+  "updated_at": "2026-11-11",
   "models": [
     {
       "id": "MiniMax-M2",
@@ -393,10 +393,7 @@
         "output": 5,
         "cache_read": 0.1,
         "cache_write": 1.25
-      },
-      "aliases": [
-        "claude-haiku-4-5-20251001"
-      ]
+      }
     },
     {
       "id": "claude-haiku-5-5",
@@ -1515,6 +1512,35 @@
     {
       "id": "gemini-4-argon",
       "name": "Gemini 4 Argon",
+      "kind": "chat",
+      "channel": "google",
+      "capabilities": {
+        "vision": true,
+        "tools": true,
+        "reasoning": {
+          "supported": true,
+          "efforts": [
+            "low",
+            "medium",
+            "high"
+          ]
+        }
+      },
+      "limit": {
+        "context": 1048576,
+        "output": 32768
+      },
+      "price": {
+        "currency": "USD",
+        "unit": "per_million_tokens",
+        "input": 2,
+        "output": 10,
+        "cache_read": 0.1
+      }
+    },
+    {
+      "id": "gemini-4-carbon",
+      "name": "Gemini 4 Carbon",
       "kind": "chat",
       "channel": "google",
       "capabilities": {
@@ -5239,7 +5265,10 @@
         "input": 0.10461,
         "output": 0.31384,
         "cache_read": 0.02092
-      }
+      },
+      "aliases": [
+        "step-3.5-flash-2603"
+      ]
     },
     {
       "id": "step-3.7-flash",
