@@ -1,6 +1,6 @@
 {
   "schema": "honeybadger-models/v1",
-  "updated_at": "2026-11-12",
+  "updated_at": "2026-11-13",
   "models": [
     {
       "id": "MiniMax-M2",
@@ -272,6 +272,13 @@
       "capabilities": {
         "vision": true,
         "tools": false
+      },
+      "price": {
+        "currency": "USD",
+        "unit": "per_million_tokens",
+        "input": 5,
+        "output": 10,
+        "cache_read": 1.25
       }
     },
     {
@@ -393,10 +400,7 @@
         "output": 5,
         "cache_read": 0.1,
         "cache_write": 1.25
-      },
-      "aliases": [
-        "claude-haiku-4-5-20251001"
-      ]
+      }
     },
     {
       "id": "claude-haiku-5-5",
@@ -1574,6 +1578,36 @@
       }
     },
     {
+      "id": "gemini-4-hydrogen",
+      "name": "Gemini 4 Hydrogen",
+      "kind": "chat",
+      "channel": "google",
+      "capabilities": {
+        "vision": true,
+        "tools": true,
+        "reasoning": {
+          "supported": true,
+          "efforts": [
+            "low",
+            "medium",
+            "high",
+            "xhigh"
+          ]
+        }
+      },
+      "limit": {
+        "context": 1048576,
+        "output": 65536
+      },
+      "price": {
+        "currency": "USD",
+        "unit": "per_million_tokens",
+        "input": 1.5,
+        "output": 7.5,
+        "cache_read": 0.075
+      }
+    },
+    {
       "id": "gemini-embedding-001",
       "name": "Gemini Embedding 001",
       "kind": "chat",
@@ -1673,29 +1707,6 @@
       }
     },
     {
-      "id": "gemini-omni-flash-preview",
-      "name": "Gemini Omni Flash Preview",
-      "kind": "video",
-      "channel": "google",
-      "capabilities": {
-        "vision": true,
-        "tools": false,
-        "reasoning": {
-          "supported": true
-        }
-      },
-      "limit": {
-        "context": 131072,
-        "output": 65536
-      },
-      "price": {
-        "currency": "USD",
-        "unit": "per_million_tokens",
-        "input": 1.5,
-        "output": 17.5
-      }
-    },
-    {
       "id": "gemini-pro-latest",
       "name": "Gemini Pro Latest",
       "kind": "chat",
@@ -1739,6 +1750,12 @@
       "limit": {
         "context": 262144,
         "output": 32768
+      },
+      "price": {
+        "currency": "USD",
+        "unit": "per_million_tokens",
+        "input": 0,
+        "output": 0
       }
     },
     {
@@ -1756,6 +1773,12 @@
       "limit": {
         "context": 262144,
         "output": 32768
+      },
+      "price": {
+        "currency": "USD",
+        "unit": "per_million_tokens",
+        "input": 0,
+        "output": 0
       }
     },
     {
@@ -3264,6 +3287,13 @@
       "capabilities": {
         "vision": true,
         "tools": false
+      },
+      "price": {
+        "currency": "USD",
+        "unit": "per_million_tokens",
+        "input": 5,
+        "output": 10,
+        "cache_read": 1.25
       }
     },
     {
