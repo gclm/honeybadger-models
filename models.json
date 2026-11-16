@@ -1,6 +1,6 @@
 {
   "schema": "honeybadger-models/v1",
-  "updated_at": "2026-11-15",
+  "updated_at": "2026-11-16",
   "models": [
     {
       "id": "MiniMax-M2",
@@ -984,7 +984,7 @@
         "currency": "USD",
         "unit": "per_million_tokens",
         "input": 0.3,
-        "output": 30,
+        "output": 2.5,
         "cache_read": 0.075
       }
     },
@@ -1130,7 +1130,7 @@
         "currency": "USD",
         "unit": "per_million_tokens",
         "input": 2,
-        "output": 120
+        "output": 12
       }
     },
     {
@@ -1157,7 +1157,7 @@
         "currency": "USD",
         "unit": "per_million_tokens",
         "input": 0.5,
-        "output": 60
+        "output": 3
       }
     },
     {
@@ -1214,7 +1214,7 @@
         "currency": "USD",
         "unit": "per_million_tokens",
         "input": 0.25,
-        "output": 30
+        "output": 1.5
       }
     },
     {
@@ -3333,13 +3333,6 @@
       "capabilities": {
         "vision": true,
         "tools": false
-      },
-      "price": {
-        "currency": "USD",
-        "unit": "per_million_tokens",
-        "input": 5,
-        "output": 30,
-        "cache_read": 1.25
       }
     },
     {
@@ -5330,7 +5323,10 @@
         "input": 0.10461,
         "output": 0.31384,
         "cache_read": 0.02092
-      }
+      },
+      "aliases": [
+        "step-3.5-flash-2603"
+      ]
     },
     {
       "id": "step-3.7-flash",
