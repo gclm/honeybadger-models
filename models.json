@@ -1,6 +1,6 @@
 {
   "schema": "honeybadger-models/v1",
-  "updated_at": "2026-11-17",
+  "updated_at": "2026-11-18",
   "models": [
     {
       "id": "MiniMax-M2",
@@ -400,7 +400,10 @@
         "output": 5,
         "cache_read": 0.1,
         "cache_write": 1.25
-      }
+      },
+      "aliases": [
+        "claude-haiku-4-5-20251001"
+      ]
     },
     {
       "id": "claude-haiku-5-5",
@@ -3229,6 +3232,70 @@
       }
     },
     {
+      "id": "gpt-6.2-astra",
+      "name": "GPT-6.2 Astra",
+      "kind": "chat",
+      "channel": "openai",
+      "capabilities": {
+        "vision": true,
+        "tools": true,
+        "reasoning": {
+          "supported": true,
+          "efforts": [
+            "low",
+            "medium",
+            "high",
+            "xhigh",
+            "max"
+          ]
+        }
+      },
+      "limit": {
+        "context": 1050000,
+        "output": 128000
+      },
+      "price": {
+        "currency": "USD",
+        "unit": "per_million_tokens",
+        "input": 8,
+        "output": 40,
+        "cache_read": 0.4,
+        "cache_write": 10
+      }
+    },
+    {
+      "id": "gpt-6.2-sol",
+      "name": "GPT-6.2 Sol",
+      "kind": "chat",
+      "channel": "openai",
+      "capabilities": {
+        "vision": true,
+        "tools": true,
+        "reasoning": {
+          "supported": true,
+          "efforts": [
+            "low",
+            "medium",
+            "high",
+            "xhigh",
+            "max"
+          ]
+        }
+      },
+      "limit": {
+        "context": 1050000,
+        "output": 128000
+      },
+      "price": {
+        "currency": "USD",
+        "unit": "per_million_tokens",
+        "input": 2,
+        "output": 10,
+        "cache_read": 0.1,
+        "cache_write": 2.5
+      }
+    },
+    {
       "id": "gpt-daybreak-blue-latest",
       "name": "Daybreak Blue",
       "kind": "chat",
@@ -5317,10 +5384,7 @@
         "input": 0.10461,
         "output": 0.31384,
         "cache_read": 0.02092
-      },
-      "aliases": [
-        "step-3.5-flash-2603"
-      ]
+      }
     },
     {
       "id": "step-3.7-flash",
