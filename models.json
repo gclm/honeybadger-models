@@ -1,6 +1,6 @@
 {
   "schema": "honeybadger-models/v1",
-  "updated_at": "2026-11-19",
+  "updated_at": "2026-11-20",
   "models": [
     {
       "id": "MiniMax-M2",
@@ -3650,30 +3650,6 @@
       }
     },
     {
-      "id": "grok-build-0.1",
-      "name": "Grok Build 0.1",
-      "kind": "chat",
-      "channel": "xai",
-      "capabilities": {
-        "vision": true,
-        "tools": true,
-        "reasoning": {
-          "supported": true
-        }
-      },
-      "limit": {
-        "context": 256000,
-        "output": 256000
-      },
-      "price": {
-        "currency": "USD",
-        "unit": "per_million_tokens",
-        "input": 1,
-        "output": 2,
-        "cache_read": 0.2
-      }
-    },
-    {
       "id": "grok-imagine-image",
       "name": "Grok Imagine Image",
       "kind": "image",
@@ -5411,10 +5387,7 @@
         "input": 0.10461,
         "output": 0.31384,
         "cache_read": 0.02092
-      },
-      "aliases": [
-        "step-3.5-flash-2603"
-      ]
+      }
     },
     {
       "id": "step-3.7-flash",
