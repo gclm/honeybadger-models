@@ -1,6 +1,6 @@
 {
   "schema": "honeybadger-models/v1",
-  "updated_at": "2026-11-24",
+  "updated_at": "2026-11-25",
   "models": [
     {
       "id": "MiniMax-M2",
@@ -951,7 +951,7 @@
         "tools": false
       },
       "limit": {
-        "context": 32768,
+        "context": 65536,
         "output": 32768
       },
       "price": {
@@ -2178,6 +2178,36 @@
     {
       "id": "glm-5.3-flashx",
       "name": "GLM-5.3-FlashX",
+      "kind": "chat",
+      "channel": "zhipuai",
+      "capabilities": {
+        "vision": true,
+        "tools": true,
+        "reasoning": {
+          "supported": true,
+          "efforts": [
+            "low",
+            "high",
+            "max"
+          ]
+        }
+      },
+      "limit": {
+        "context": 1000000,
+        "output": 131072
+      },
+      "price": {
+        "currency": "USD",
+        "unit": "per_million_tokens",
+        "input": 0.37,
+        "output": 1.25,
+        "cache_read": 0.075,
+        "cache_write": 0
+      }
+    },
+    {
+      "id": "glm-5.3-flashx-legal",
+      "name": "GLM-5.3-FlashX-Legal",
       "kind": "chat",
       "channel": "zhipuai",
       "capabilities": {
@@ -3641,14 +3671,8 @@
         "tools": false
       },
       "limit": {
-        "context": 1048576,
+        "context": 131072,
         "output": 65536
-      },
-      "price": {
-        "currency": "USD",
-        "unit": "per_million_tokens",
-        "input": 0,
-        "output": 0
       }
     },
     {
@@ -3661,86 +3685,8 @@
         "tools": false
       },
       "limit": {
-        "context": 1048576,
+        "context": 131072,
         "output": 65536
-      },
-      "price": {
-        "currency": "USD",
-        "unit": "per_million_tokens",
-        "input": 0,
-        "output": 0
-      }
-    },
-    {
-      "id": "mimo-v2.5",
-      "name": "MiMo-V2.5",
-      "kind": "chat",
-      "channel": "xiaomi",
-      "capabilities": {
-        "vision": true,
-        "tools": true,
-        "reasoning": {
-          "supported": true
-        }
-      },
-      "limit": {
-        "context": 1048576,
-        "output": 131072
-      },
-      "price": {
-        "currency": "USD",
-        "unit": "per_million_tokens",
-        "input": 0.14,
-        "output": 0.28,
-        "cache_read": 0.0028
-      }
-    },
-    {
-      "id": "mimo-v2.5-pro",
-      "name": "MiMo-V2.5-Pro",
-      "kind": "chat",
-      "channel": "xiaomi",
-      "capabilities": {
-        "vision": false,
-        "tools": true,
-        "reasoning": {
-          "supported": true
-        }
-      },
-      "limit": {
-        "context": 1048576,
-        "output": 131072
-      },
-      "price": {
-        "currency": "USD",
-        "unit": "per_million_tokens",
-        "input": 0.435,
-        "output": 0.87,
-        "cache_read": 0.0036
-      }
-    },
-    {
-      "id": "mimo-v2.5-pro-ultraspeed",
-      "name": "MiMo-V2.5-Pro-UltraSpeed",
-      "kind": "chat",
-      "channel": "xiaomi",
-      "capabilities": {
-        "vision": false,
-        "tools": true,
-        "reasoning": {
-          "supported": true
-        }
-      },
-      "limit": {
-        "context": 1048576,
-        "output": 131072
-      },
-      "price": {
-        "currency": "USD",
-        "unit": "per_million_tokens",
-        "input": 1.305,
-        "output": 2.61,
-        "cache_read": 0.0108
       }
     },
     {
@@ -3873,29 +3819,6 @@
       }
     },
     {
-      "id": "qvq-max",
-      "name": "QVQ Max",
-      "kind": "chat",
-      "channel": "alibaba",
-      "capabilities": {
-        "vision": true,
-        "tools": true,
-        "reasoning": {
-          "supported": true
-        }
-      },
-      "limit": {
-        "context": 131072,
-        "output": 8192
-      },
-      "price": {
-        "currency": "USD",
-        "unit": "per_million_tokens",
-        "input": 1.2,
-        "output": 4.8
-      }
-    },
-    {
       "id": "qwen-flash",
       "name": "Qwen Flash",
       "kind": "chat",
@@ -3937,7 +3860,8 @@
         "currency": "USD",
         "unit": "per_million_tokens",
         "input": 1.6,
-        "output": 6.4
+        "output": 6.4,
+        "cache_read": 0.32
       }
     },
     {
@@ -3958,66 +3882,6 @@
         "unit": "per_million_tokens",
         "input": 2.46,
         "output": 7.37
-      }
-    },
-    {
-      "id": "qwen-mt-turbo",
-      "name": "Qwen-MT Turbo",
-      "kind": "chat",
-      "channel": "alibaba",
-      "capabilities": {
-        "vision": false,
-        "tools": false
-      },
-      "limit": {
-        "context": 16384,
-        "output": 8192
-      },
-      "price": {
-        "currency": "USD",
-        "unit": "per_million_tokens",
-        "input": 0.16,
-        "output": 0.49
-      }
-    },
-    {
-      "id": "qwen-omni-turbo",
-      "name": "Qwen-Omni Turbo",
-      "kind": "audio",
-      "channel": "alibaba",
-      "capabilities": {
-        "vision": true,
-        "tools": true
-      },
-      "limit": {
-        "context": 32768,
-        "output": 2048
-      },
-      "price": {
-        "currency": "USD",
-        "unit": "per_million_tokens",
-        "input": 0.07,
-        "output": 0.27
-      }
-    },
-    {
-      "id": "qwen-omni-turbo-realtime",
-      "name": "Qwen-Omni Turbo Realtime",
-      "kind": "audio",
-      "channel": "alibaba",
-      "capabilities": {
-        "vision": true,
-        "tools": true
-      },
-      "limit": {
-        "context": 32768,
-        "output": 2048
-      },
-      "price": {
-        "currency": "USD",
-        "unit": "per_million_tokens",
-        "input": 0.27,
-        "output": 1.07
       }
     },
     {
@@ -4063,51 +3927,8 @@
         "currency": "USD",
         "unit": "per_million_tokens",
         "input": 0.5,
-        "output": 1.4
-      }
-    },
-    {
-      "id": "qwen-turbo",
-      "name": "Qwen Turbo",
-      "kind": "chat",
-      "channel": "alibaba",
-      "capabilities": {
-        "vision": false,
-        "tools": true,
-        "reasoning": {
-          "supported": true
-        }
-      },
-      "limit": {
-        "context": 1000000,
-        "output": 16384
-      },
-      "price": {
-        "currency": "USD",
-        "unit": "per_million_tokens",
-        "input": 0.05,
-        "output": 0.2,
-        "reasoning": 0.5
-      }
-    },
-    {
-      "id": "qwen-vl-max",
-      "name": "Qwen-VL Max",
-      "kind": "chat",
-      "channel": "alibaba",
-      "capabilities": {
-        "vision": true,
-        "tools": true
-      },
-      "limit": {
-        "context": 131072,
-        "output": 8192
-      },
-      "price": {
-        "currency": "USD",
-        "unit": "per_million_tokens",
-        "input": 0.8,
-        "output": 3.2
+        "output": 1.4,
+        "cache_read": 0.1
       }
     },
     {
@@ -4131,142 +3952,6 @@
       }
     },
     {
-      "id": "qwen-vl-plus",
-      "name": "Qwen-VL Plus",
-      "kind": "chat",
-      "channel": "alibaba",
-      "capabilities": {
-        "vision": true,
-        "tools": true
-      },
-      "limit": {
-        "context": 131072,
-        "output": 8192
-      },
-      "price": {
-        "currency": "USD",
-        "unit": "per_million_tokens",
-        "input": 0.21,
-        "output": 0.63
-      }
-    },
-    {
-      "id": "qwen2-5-omni-7b",
-      "name": "Qwen2.5-Omni 7B",
-      "kind": "audio",
-      "channel": "alibaba",
-      "capabilities": {
-        "vision": true,
-        "tools": true
-      },
-      "limit": {
-        "context": 32768,
-        "output": 2048
-      },
-      "price": {
-        "currency": "USD",
-        "unit": "per_million_tokens",
-        "input": 0.1,
-        "output": 0.4
-      }
-    },
-    {
-      "id": "qwen3-14b",
-      "name": "Qwen3 14B",
-      "kind": "chat",
-      "channel": "alibaba",
-      "capabilities": {
-        "vision": false,
-        "tools": true,
-        "reasoning": {
-          "supported": true
-        }
-      },
-      "limit": {
-        "context": 131072,
-        "output": 8192
-      },
-      "price": {
-        "currency": "USD",
-        "unit": "per_million_tokens",
-        "input": 0.35,
-        "output": 1.4,
-        "reasoning": 4.2
-      }
-    },
-    {
-      "id": "qwen3-235b-a22b",
-      "name": "Qwen3 235B-A22B",
-      "kind": "chat",
-      "channel": "alibaba",
-      "capabilities": {
-        "vision": false,
-        "tools": true,
-        "reasoning": {
-          "supported": true
-        }
-      },
-      "limit": {
-        "context": 131072,
-        "output": 16384
-      },
-      "price": {
-        "currency": "USD",
-        "unit": "per_million_tokens",
-        "input": 0.7,
-        "output": 2.8,
-        "reasoning": 8.4
-      }
-    },
-    {
-      "id": "qwen3-32b",
-      "name": "Qwen3 32B",
-      "kind": "chat",
-      "channel": "alibaba",
-      "capabilities": {
-        "vision": false,
-        "tools": true,
-        "reasoning": {
-          "supported": true
-        }
-      },
-      "limit": {
-        "context": 131072,
-        "output": 16384
-      },
-      "price": {
-        "currency": "USD",
-        "unit": "per_million_tokens",
-        "input": 0.7,
-        "output": 2.8,
-        "reasoning": 8.4
-      }
-    },
-    {
-      "id": "qwen3-8b",
-      "name": "Qwen3 8B",
-      "kind": "chat",
-      "channel": "alibaba",
-      "capabilities": {
-        "vision": false,
-        "tools": true,
-        "reasoning": {
-          "supported": true
-        }
-      },
-      "limit": {
-        "context": 131072,
-        "output": 8192
-      },
-      "price": {
-        "currency": "USD",
-        "unit": "per_million_tokens",
-        "input": 0.18,
-        "output": 0.7,
-        "reasoning": 2.1
-      }
-    },
-    {
       "id": "qwen3-asr-flash",
       "name": "Qwen3-ASR Flash",
       "kind": "chat",
@@ -4278,46 +3963,6 @@
       "limit": {
         "context": 53248,
         "output": 4096
-      }
-    },
-    {
-      "id": "qwen3-coder-30b-a3b-instruct",
-      "name": "Qwen3-Coder 30B-A3B Instruct",
-      "kind": "chat",
-      "channel": "alibaba",
-      "capabilities": {
-        "vision": false,
-        "tools": true
-      },
-      "limit": {
-        "context": 262144,
-        "output": 65536
-      },
-      "price": {
-        "currency": "USD",
-        "unit": "per_million_tokens",
-        "input": 0.45,
-        "output": 2.25
-      }
-    },
-    {
-      "id": "qwen3-coder-480b-a35b-instruct",
-      "name": "Qwen3-Coder 480B-A35B Instruct",
-      "kind": "chat",
-      "channel": "alibaba",
-      "capabilities": {
-        "vision": false,
-        "tools": true
-      },
-      "limit": {
-        "context": 262144,
-        "output": 65536
-      },
-      "price": {
-        "currency": "USD",
-        "unit": "per_million_tokens",
-        "input": 1.5,
-        "output": 7.5
       }
     },
     {
@@ -4343,109 +3988,6 @@
       }
     },
     {
-      "id": "qwen3-coder-plus",
-      "name": "Qwen3 Coder Plus",
-      "kind": "chat",
-      "channel": "alibaba",
-      "capabilities": {
-        "vision": false,
-        "tools": true
-      },
-      "limit": {
-        "context": 1048576,
-        "output": 65536
-      },
-      "price": {
-        "currency": "USD",
-        "unit": "per_million_tokens",
-        "input": 1,
-        "output": 5
-      }
-    },
-    {
-      "id": "qwen3-livetranslate-flash-realtime",
-      "name": "Qwen3-LiveTranslate Flash Realtime",
-      "kind": "audio",
-      "channel": "alibaba",
-      "capabilities": {
-        "vision": true,
-        "tools": false
-      },
-      "limit": {
-        "context": 53248,
-        "output": 4096
-      },
-      "price": {
-        "currency": "USD",
-        "unit": "per_million_tokens",
-        "input": 10,
-        "output": 10
-      }
-    },
-    {
-      "id": "qwen3-max",
-      "name": "Qwen3 Max",
-      "kind": "chat",
-      "channel": "alibaba",
-      "capabilities": {
-        "vision": false,
-        "tools": true
-      },
-      "limit": {
-        "context": 262144,
-        "output": 65536
-      },
-      "price": {
-        "currency": "USD",
-        "unit": "per_million_tokens",
-        "input": 1.2,
-        "output": 6
-      }
-    },
-    {
-      "id": "qwen3-next-80b-a3b-instruct",
-      "name": "Qwen3-Next 80B-A3B Instruct",
-      "kind": "chat",
-      "channel": "alibaba",
-      "capabilities": {
-        "vision": false,
-        "tools": true
-      },
-      "limit": {
-        "context": 131072,
-        "output": 32768
-      },
-      "price": {
-        "currency": "USD",
-        "unit": "per_million_tokens",
-        "input": 0.5,
-        "output": 2
-      }
-    },
-    {
-      "id": "qwen3-next-80b-a3b-thinking",
-      "name": "Qwen3-Next 80B-A3B (Thinking)",
-      "kind": "chat",
-      "channel": "alibaba",
-      "capabilities": {
-        "vision": false,
-        "tools": true,
-        "reasoning": {
-          "supported": true
-        }
-      },
-      "limit": {
-        "context": 131072,
-        "output": 32768
-      },
-      "price": {
-        "currency": "USD",
-        "unit": "per_million_tokens",
-        "input": 0.5,
-        "output": 6
-      }
-    },
-    {
       "id": "qwen3-omni-flash",
       "name": "Qwen3-Omni Flash",
       "kind": "audio",
@@ -4466,50 +4008,6 @@
         "unit": "per_million_tokens",
         "input": 0.43,
         "output": 1.66
-      }
-    },
-    {
-      "id": "qwen3-omni-flash-realtime",
-      "name": "Qwen3-Omni Flash Realtime",
-      "kind": "audio",
-      "channel": "alibaba",
-      "capabilities": {
-        "vision": true,
-        "tools": true
-      },
-      "limit": {
-        "context": 65536,
-        "output": 16384
-      },
-      "price": {
-        "currency": "USD",
-        "unit": "per_million_tokens",
-        "input": 0.52,
-        "output": 1.99
-      }
-    },
-    {
-      "id": "qwen3-vl-235b-a22b",
-      "name": "Qwen3-VL 235B-A22B",
-      "kind": "chat",
-      "channel": "alibaba",
-      "capabilities": {
-        "vision": true,
-        "tools": true,
-        "reasoning": {
-          "supported": true
-        }
-      },
-      "limit": {
-        "context": 131072,
-        "output": 32768
-      },
-      "price": {
-        "currency": "USD",
-        "unit": "per_million_tokens",
-        "input": 0.7,
-        "output": 2.8,
-        "reasoning": 8.4
       }
     },
     {
@@ -4699,6 +4197,7 @@
         "unit": "per_million_tokens",
         "input": 0.4,
         "output": 2.4,
+        "cache_write": 0.5,
         "reasoning": 2.4
       }
     },
@@ -4771,31 +4270,6 @@
         "output": 1.5,
         "cache_read": 0.025,
         "cache_write": 0.3125
-      }
-    },
-    {
-      "id": "qwen3.6-max-preview",
-      "name": "Qwen3.6 Max Preview",
-      "kind": "chat",
-      "channel": "alibaba",
-      "capabilities": {
-        "vision": false,
-        "tools": true,
-        "reasoning": {
-          "supported": true
-        }
-      },
-      "limit": {
-        "context": 262144,
-        "output": 65536
-      },
-      "price": {
-        "currency": "USD",
-        "unit": "per_million_tokens",
-        "input": 1.3,
-        "output": 7.8,
-        "cache_read": 0.13,
-        "cache_write": 1.625
       }
     },
     {
@@ -4988,26 +4462,54 @@
       }
     },
     {
-      "id": "qwq-plus",
-      "name": "QwQ Plus",
+      "id": "qwen4-max",
+      "name": "Qwen4 Max",
       "kind": "chat",
       "channel": "alibaba",
       "capabilities": {
-        "vision": false,
+        "vision": true,
         "tools": true,
         "reasoning": {
-          "supported": true
+          "supported": true,
+          "efforts": [
+            "low",
+            "high",
+            "xhigh"
+          ]
         }
       },
       "limit": {
-        "context": 131072,
-        "output": 8192
+        "context": 1000000,
+        "output": 262144
       },
       "price": {
         "currency": "USD",
         "unit": "per_million_tokens",
-        "input": 0.8,
-        "output": 2.4
+        "input": 1.5,
+        "output": 4.5,
+        "cache_read": 0.075,
+        "cache_write": 1.875
+      }
+    },
+    {
+      "id": "step-1o-turbo-vision",
+      "name": "Step-1o Turbo Vision",
+      "kind": "chat",
+      "channel": "stepfun",
+      "capabilities": {
+        "vision": true,
+        "tools": true
+      },
+      "limit": {
+        "context": 32768,
+        "output": 32768
+      },
+      "price": {
+        "currency": "USD",
+        "unit": "per_million_tokens",
+        "input": 0.37429,
+        "output": 1.1977,
+        "cache_read": 0.074858
       }
     },
     {
